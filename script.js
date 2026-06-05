@@ -1030,11 +1030,9 @@ function renderTimeline(dayIndex) {
         if (item.notes.includes("切勿遲到") || item.notes.includes("限") || item.notes.includes("已結清")) {
             notesClass += " bold-notes";
         }
-        
-        // 組裝卡片 HTML
         timelineItem.innerHTML = `
             <div class="timeline-dot"></div>
-            <div class="card">
+            <div class="card ${badge.class === 'badge-transit' ? 'card-transit' : ''}">
                 <div class="card-header">
                     <span class="card-time ${item.time ? '' : 'empty-time'}">
                         <i class="ri-time-line"></i> ${item.time ? item.time : '順遊'}

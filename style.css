@@ -379,6 +379,17 @@ body {
     border-color: rgba(0, 0, 0, 0.08);
 }
 
+/* 交通卡片專屬淺灰色底 */
+.card.card-transit {
+    background: rgba(235, 237, 240, 0.85);
+    border-color: rgba(215, 220, 225, 0.6);
+}
+
+.card.card-transit:hover {
+    border-color: rgba(180, 185, 195, 0.75);
+}
+
+
 /* 卡片頭部：時間與標籤 */
 .card-header {
     display: flex;
