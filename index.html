@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>尚白陛下榮耀返台之旅</title>
+    
+    <!-- 網頁標籤圖標 (Favicon) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👑</text></svg>">
+
+    <!-- SEO 優化 -->
+    <meta name="description" content="專屬兩人的韓國釜山、大邱、慶州、首爾、水原 9 天 8 夜實用行程規劃網站，快速開啟 Naver Map 導航與火車班次快查。">
+    <meta name="author" content="Antigravity Web Studio">
+
+    <!-- 引入 Remix Icon 圖標庫 -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- 引入專屬樣式表 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 頂部 Header 區段 -->
+    <header class="app-header">
+        <div class="header-container">
+            <span class="app-title-badge">👑 2026 KOREA TOUR</span>
+            <h1 class="app-title" id="app-main-title">尚白陛下榮耀返台之旅</h1>
+            <p class="app-subtitle" id="app-sub-title">釜山 • 慶州 • 大邱 • 水原 • 首爾</p>
+
+            <!-- 出發倒數 -->
+            <div class="countdown-box" id="countdown-widget">
+                <i class="ri-plane-line"></i> 距離出發還有：<span id="countdown-days">計算中...</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 黏性定位的天數導航列 (手機端滑動切換) -->
+    <nav class="day-nav-wrapper" id="sticky-day-navigation">
+        <div class="day-nav-container" id="day-nav-container">
+            <!-- 由 Javascript 動態渲染 Day 1 - Day 9 頁籤 -->
+        </div>
+    </nav>
+
+    <!-- 主要內容區段 -->
+    <main class="main-layout">
+
+        <!-- 頂部實用快查資訊 (桌機排版為雙欄，手機為單欄) -->
+        <section class="quick-info-section" id="quick-links-section">
+            <!-- 飯店快捷卡片 -->
+            <div class="quick-card" id="hotel-quick-card">
+                <h2 class="quick-card-title">
+                    <i class="ri-hotel-line" style="color: var(--theme-busan);"></i> 住宿大本營
+                </h2>
+                <ul class="quick-card-list" id="quick-hotel-list">
+                    <!-- JS 動態寫入 -->
+                </ul>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: 1rem;" onclick="openModal('hotel')"
+                    id="btn-view-hotels">
+                    <i class="ri-information-line"></i> 詳細入住資訊
+                </button>
+            </div>
+
+            <!-- 交通快捷卡片 -->
+            <div class="quick-card" id="transit-quick-card">
+                <h2 class="quick-card-title">
+                    <i class="ri-train-line" style="color: var(--theme-daegu);"></i> 跨城列車班次
+                </h2>
+                <ul class="quick-card-list" id="quick-transit-list">
+                    <!-- JS 動態寫入 -->
+                </ul>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: 1rem;" onclick="openModal('transit')"
+                    id="btn-view-transit">
+                    <i class="ri-time-line"></i> 所有車票時間
+                </button>
+            </div>
+        </section>
+
+        <!-- 當日行程時間軸 -->
+        <section id="daily-itinerary-section">
+            <!-- 當天標題與簡介 -->
+            <div class="day-header" id="day-header-container">
+                <h2 class="day-header-title" id="day-title">加載中...</h2>
+            </div>
+
+            <!-- 時間軸內容 -->
+            <div class="timeline" id="timeline-content">
+                <!-- 由 Javascript 動態渲染該天卡片列表 -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 行動端底部固定浮動按鈕 (點擊直接看飯店/交通彈窗) -->
+    <div class="mobile-bottom-bar" id="mobile-floating-bar">
+        <button class="bottom-tab-btn" onclick="openModal('hotel')" id="mobile-btn-hotels">
+            <i class="ri-hotel-bed-line"></i>
+            <span>查飯店</span>
+        </button>
+        <button class="bottom-tab-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="mobile-btn-top">
+            <i class="ri-arrow-up-s-line" style="font-size: 1.6rem; color: var(--theme-daegu);"></i>
+            <span style="color: var(--theme-daegu); font-weight: 700;">回頂部</span>
+        </button>
+        <button class="bottom-tab-btn" onclick="openModal('transit')" id="mobile-btn-transit">
+            <i class="ri-train-wifi-line"></i>
+            <span>查火車</span>
+        </button>
+    </div>
+
+    <!-- 全螢幕模態彈窗 (Modal Dialog) -->
+    <div class="modal-overlay" id="info-modal">
+        <div class="modal-content" id="modal-container">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-title">詳細資訊</h3>
+                <button class="modal-close-btn" id="modal-close" aria-label="Close modal">×</button>
+            </div>
+            <div class="modal-body" id="modal-body-content">
+                <!-- JS 動態寫入內容 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 載入互動指令碼 -->
+    <script src="script.js"></script>
+</body>
+
+</html>
