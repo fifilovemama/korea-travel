@@ -293,11 +293,11 @@ const itineraryData = [
         "notes": ""
       },
       {
-        "time": "",
+        "time": "13:15",
         "expense": "43500.0",
-        "activity": "東大邱車站13:15 > 首爾車站14:59",
-        "content": "KTX032",
-        "notes": "一人車票價 43,500 韓元"
+        "activity": "東大邱站 13:15 > 首爾站 14:59 (KTX-CheongRyong 032)",
+        "content": "7車 11A、11B (正向)",
+        "notes": "一人票價 43,500 ₩ (已出票)"
       },
       {
         "time": "15:00",
@@ -1072,15 +1072,15 @@ function initQuickCards() {
         hotelList.innerHTML = `
             <li>
                 <span>Day 1-3 慶北大學瞻星館學生宿舍</span>
-                <a href="https://map.naver.com/p/entry/place/13010731" target="_blank">💚 地圖</a>
+                <a href="https://map.naver.com/p/entry/place/13010731" target="_blank">地圖</a>
             </li>
             <li>
                 <span>Day 4-7 東大門 Abbottstay</span>
-                <a href="https://naver.me/FbOvHIOu" target="_blank">💚 地圖</a>
+                <a href="https://naver.me/FbOvHIOu" target="_blank">地圖</a>
             </li>
             <li>
                 <span>Day 8 江南多米飯店 (Dormy Inn)</span>
-                <a href="https://naver.me/5tJtlBKF" target="_blank">💚 地圖</a>
+                <a href="https://naver.me/5tJtlBKF" target="_blank">地圖</a>
             </li>
         `;
     }
@@ -1162,10 +1162,11 @@ function initModals() {
                     <p style="font-size:0.9rem;">🎟️ 備註：車票現場買即可</p>
                 </div>
                 <div style="margin-bottom: 1.25rem;">
-                    <div class="modal-section-title">KTX 032 (東大邱 ➔ 首爾)</div>
+                    <div class="modal-section-title">KTX-CheongRyong 032 (東大邱 ➔ 首爾)</div>
                     <p style="font-size:0.9rem;">📅 日期：6/24 (三)</p>
                     <p style="font-size:0.9rem;">⏰ 時間：13:15 東大邱出發 ➔ 14:59 首爾抵達</p>
-                    <p style="font-size:0.9rem;">💰 票價：單人 43,500 ₩</p>
+                    <p style="font-size:0.9rem;">🎫 座位：7車 11A、11B (正向)</p>
+                    <p style="font-size:0.9rem;">💰 票價：單人 43,500 ₩ (已出票)</p>
                 </div>
                 <div>
                     <div class="modal-section-title">AREX 機場直達車 (首爾 ➔ 仁川機場)</div>
