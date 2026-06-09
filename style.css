@@ -7,29 +7,29 @@
     --card-border: rgba(255, 255, 255, 0.5);
     --text-primary: #2b2b2b;
     --text-secondary: #6e6e6e;
-    
+
     /* 品牌與按鈕色彩 */
     --naver-green: #03C75A;
     --naver-hover: #02a84b;
     --klook-orange: #FF5B00;
     --klook-hover: #e04f00;
     --btn-secondary-bg: rgba(0, 0, 0, 0.05);
-    
+
     /* 城市主題色 */
     --theme-busan: #1e88e5;
     --theme-daegu: #c05c46;
     --theme-seoul: #5c5470;
     --theme-suwon: #9c27b0;
     --theme-dmz: #43a047;
-    
+
     --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.03);
     --shadow-md: 0 12px 36px rgba(0, 0, 0, 0.06);
     --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.08);
-    
+
     --radius-sm: 12px;
     --radius-md: 20px;
     --radius-lg: 30px;
-    
+
     --font-sans: 'Outfit', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
@@ -173,11 +173,13 @@ body {
     overflow-x: auto;
     scroll-behavior: smooth;
     padding: 0.75rem 0.5rem;
-    scrollbar-width: none; /* Firefox */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 .day-nav-container::-webkit-scrollbar {
-    display: none; /* Safari & Chrome */
+    display: none;
+    /* Safari & Chrome */
 }
 
 .day-nav-btn {
@@ -440,12 +442,35 @@ body {
 }
 
 /* 標籤配色 */
-.badge-food { background-color: #ffebee; color: #c62828; }
-.badge-scenic { background-color: #e8f5e9; color: #2e7d32; }
-.badge-hotel { background-color: #e3f2fd; color: #1565c0; }
-.badge-transit { background-color: #f3e5f5; color: #6a1b9a; }
-.badge-shop { background-color: #fff8e1; color: #f57f17; }
-.badge-other { background-color: #eceff1; color: #37474f; }
+.badge-food {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.badge-scenic {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.badge-hotel {
+    background-color: #e3f2fd;
+    color: #1565c0;
+}
+
+.badge-transit {
+    background-color: #f3e5f5;
+    color: #6a1b9a;
+}
+
+.badge-shop {
+    background-color: #fff8e1;
+    color: #f57f17;
+}
+
+.badge-other {
+    background-color: #eceff1;
+    color: #37474f;
+}
 
 /* 卡片主體 */
 .card-title {
@@ -496,13 +521,18 @@ body {
 }
 
 .btn-naver {
-    background-color: var(--naver-green);
+    background-color: #03C75A;
     color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    box-shadow: 0 2px 8px rgba(3, 199, 90, 0.25);
 }
 
 .btn-naver:hover {
-    background-color: var(--naver-hover);
-    box-shadow: 0 4px 12px rgba(3, 199, 90, 0.2);
+    background-color: #02a84b;
+    color: #ffffff;
+    box-shadow: 0 6px 18px rgba(3, 199, 90, 0.35);
+    transform: translateY(-1px);
 }
 
 .btn-klook {
@@ -644,37 +674,85 @@ body {
 }
 
 /* 城市專屬主題樣式動態注入 */
-.theme-busan-active .day-header { border-left-color: var(--theme-busan); }
-.theme-busan-active .timeline-dot.active-dot { background-color: var(--theme-busan); box-shadow: 0 0 0 4px rgba(30, 136, 229, 0.2); }
-.theme-busan-active .day-nav-btn.active .day-num { color: var(--theme-busan); }
+.theme-busan-active .day-header {
+    border-left-color: var(--theme-busan);
+}
 
-.theme-daegu-active .day-header { border-left-color: var(--theme-daegu); }
-.theme-daegu-active .timeline-dot.active-dot { background-color: var(--theme-daegu); box-shadow: 0 0 0 4px rgba(192, 92, 70, 0.2); }
-.theme-daegu-active .day-nav-btn.active .day-num { color: var(--theme-daegu); }
+.theme-busan-active .timeline-dot.active-dot {
+    background-color: var(--theme-busan);
+    box-shadow: 0 0 0 4px rgba(30, 136, 229, 0.2);
+}
 
-.theme-seoul-active .day-header { border-left-color: var(--theme-seoul); }
-.theme-seoul-active .timeline-dot.active-dot { background-color: var(--theme-seoul); box-shadow: 0 0 0 4px rgba(92, 84, 112, 0.2); }
-.theme-seoul-active .day-nav-btn.active .day-num { color: var(--theme-seoul); }
+.theme-busan-active .day-nav-btn.active .day-num {
+    color: var(--theme-busan);
+}
 
-.theme-suwon-active .day-header { border-left-color: var(--theme-suwon); }
-.theme-suwon-active .timeline-dot.active-dot { background-color: var(--theme-suwon); box-shadow: 0 0 0 4px rgba(156, 39, 176, 0.2); }
-.theme-suwon-active .day-nav-btn.active .day-num { color: var(--theme-suwon); }
+.theme-daegu-active .day-header {
+    border-left-color: var(--theme-daegu);
+}
 
-.theme-dmz-active .day-header { border-left-color: var(--theme-dmz); }
-.theme-dmz-active .timeline-dot.active-dot { background-color: var(--theme-dmz); box-shadow: 0 0 0 4px rgba(67, 160, 71, 0.2); }
-.theme-dmz-active .day-nav-btn.active .day-num { color: var(--theme-dmz); }
+.theme-daegu-active .timeline-dot.active-dot {
+    background-color: var(--theme-daegu);
+    box-shadow: 0 0 0 4px rgba(192, 92, 70, 0.2);
+}
+
+.theme-daegu-active .day-nav-btn.active .day-num {
+    color: var(--theme-daegu);
+}
+
+.theme-seoul-active .day-header {
+    border-left-color: var(--theme-seoul);
+}
+
+.theme-seoul-active .timeline-dot.active-dot {
+    background-color: var(--theme-seoul);
+    box-shadow: 0 0 0 4px rgba(92, 84, 112, 0.2);
+}
+
+.theme-seoul-active .day-nav-btn.active .day-num {
+    color: var(--theme-seoul);
+}
+
+.theme-suwon-active .day-header {
+    border-left-color: var(--theme-suwon);
+}
+
+.theme-suwon-active .timeline-dot.active-dot {
+    background-color: var(--theme-suwon);
+    box-shadow: 0 0 0 4px rgba(156, 39, 176, 0.2);
+}
+
+.theme-suwon-active .day-nav-btn.active .day-num {
+    color: var(--theme-suwon);
+}
+
+.theme-dmz-active .day-header {
+    border-left-color: var(--theme-dmz);
+}
+
+.theme-dmz-active .timeline-dot.active-dot {
+    background-color: var(--theme-dmz);
+    box-shadow: 0 0 0 4px rgba(67, 160, 71, 0.2);
+}
+
+.theme-dmz-active .day-nav-btn.active .day-num {
+    color: var(--theme-dmz);
+}
 
 /* 響應式佈局調整 (桌機版/大平板) */
 @media (min-width: 768px) {
     .app-header {
         padding: 4rem 2rem;
     }
+
     .app-title {
         font-size: 2.8rem;
     }
+
     .main-layout {
         padding: 0;
     }
+
     .mobile-bottom-bar {
         width: 80px;
         height: 100vh;
@@ -688,6 +766,7 @@ body {
         border-right: 1px solid rgba(0, 0, 0, 0.08);
         padding: 2rem 0;
     }
+
     body {
         padding-left: 80px;
     }
@@ -802,20 +881,53 @@ body {
     padding-left: 1.45rem;
 }
 
+/* 便利貼樣式 */
 .intro-tip {
-    background-color: rgba(192, 92, 70, 0.05);
-    border-radius: 8px;
-    padding: 0.85rem 1rem;
-    font-size: 0.88rem;
-    color: #616161;
-    border: 1px dashed rgba(192, 92, 70, 0.2);
+    position: relative;
+    background: linear-gradient(135deg, #f5fbff 80%, #e1f0ff 100%);
+    border-radius: 2px 8px 8px 2px;
+    padding: 1rem 1.1rem 1rem 1.25rem;
+    font-size: 0.9rem;
+    color: #4a6c8c;
     margin-top: 1.5rem;
-    line-height: 1.6;
+    line-height: 1.7;
+    box-shadow:
+        2px 2px 6px rgba(0, 0, 0, 0.07),
+        5px 5px 0px rgba(0, 0, 0, 0.02),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.02);
+    transform: rotate(-0.5deg);
+    border-left: 4px solid #bce0fd;
+}
+
+.intro-tip::before {
+    content: "📌";
+    position: absolute;
+    top: -10px;
+    left: 12px;
+    font-size: 1.1rem;
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));
+}
+
+.intro-tip::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    background: linear-gradient(225deg, #bce0fd 50%, transparent 50%);
+    border-radius: 0 0 8px 0;
 }
 
 .intro-tip i {
-    color: #fbc02d;
-    font-size: 1.1rem;
-    vertical-align: middle;
-    margin-right: 0.2rem;
+    display: none;
+}
+
+.intro-tip strong {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #31587d;
+    display: block;
+    margin-bottom: 0.3rem;
+    letter-spacing: 0.5px;
 }
