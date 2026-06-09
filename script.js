@@ -104,7 +104,7 @@ const itineraryData = [
         "expense": "",
         "activity": "釜山車站 21:19 > 東大邱車站 22:06 (SRT 374)",
         "content": "4車 7C、7D (標準座位)",
-        "notes": "已出票，乘車時間 47 分鐘"
+        "notes": ""
       },
       {
         "time": "22:10",
@@ -198,7 +198,7 @@ const itineraryData = [
         "expense": "",
         "activity": "東宮與月池 동궁과 월지",
         "content": "https://naver.me/5FmSoI8P",
-        "notes": "新羅時期宮殿遺址，以絕美的夜間湖面倒影聞名",
+        "notes": "",
         "introKey": "donggungwolji"
       },
       {
@@ -297,7 +297,7 @@ const itineraryData = [
         "expense": "",
         "activity": "入住：阿里郎韓屋旅館 아리랑",
         "content": "https://naver.me/xWTqQmFp",
-        "notes": "6/23 住宿"
+        "notes": ""
       }
     ]
   },
@@ -315,9 +315,9 @@ const itineraryData = [
       },
       {
         "time": "13:15",
-        "expense": "43500.0",
+        "expense": "",
         "activity": "東大邱站 13:15 > 首爾站 14:59 (KTX-CheongRyong 032)",
-        "content": "7車 11A、11B (正向)",
+        "content": "",
         "notes": "一人票價 43,500 ₩ (已出票)"
       },
       {
@@ -385,10 +385,10 @@ const itineraryData = [
       },
       {
         "time": "",
-        "expense": "6680.0",
+        "expense": "",
         "activity": "阿博特斯泰東大門 아보트스테이 (Abbottstay)",
         "content": "https://naver.me/FbOvHIOu",
-        "notes": "住宿費用已結清"
+        "notes": ""
       }
     ]
   },
@@ -600,7 +600,7 @@ const itineraryData = [
       },
       {
         "time": "08:00",
-        "expense": "1500.0",
+        "expense": "",
         "activity": "DMZ 非軍事區一日遊 (中文導遊)",
         "content": "【中文導遊】非軍事區DMZ 一日遊（首爾出發） - Klook 客路",
         "notes": "Klook 預訂，已付團費",
@@ -778,7 +778,7 @@ const itineraryData = [
         "time": "20:05",
         "expense": "",
         "activity": "20:05 ICN (T2) ✈ CI163 >>> 21:50 TPE (T1) (首爾仁川 ➔ 台北桃園)",
-        "content": "中華航空 CI163 | 航廈：仁川 T2 / 桃園 T1 | 帶著滿滿的回憶返台！",
+        "content": "中華航空 CI163 | 航廈：仁川 T2",
         "notes": "出發時間 20:05 / 抵達時間 21:50，請提前於機場櫃檯辦理登機與行李託運。"
       }
     ]
