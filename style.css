@@ -389,6 +389,23 @@ body {
     border-color: rgba(180, 185, 195, 0.75);
 }
 
+/* 交通卡片內文字顏色調整為深灰色 */
+.card.card-transit .card-time,
+.card.card-transit .card-title,
+.card.card-transit .card-notes {
+    color: #444444;
+}
+
+/* 覆蓋 script.js 中的行內樣式，確保交通卡片內的輔助說明文字也是深灰色 */
+.card.card-transit p[style] {
+    color: #444444 !important;
+}
+
+/* 保持特別強調的備註為紅色/橘色以作提醒 */
+.card.card-transit .card-notes.bold-notes {
+    color: var(--theme-daegu);
+}
+
 
 /* 卡片頭部：時間與標籤 */
 .card-header {
@@ -674,4 +691,131 @@ body {
     body {
         padding-left: 80px;
     }
+}
+
+/* 交通快捷欄日期分組樣式 */
+.transit-group {
+    margin-bottom: 0.85rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.transit-group:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.transit-group-title {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--theme-daegu);
+    margin-bottom: 0.35rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.transit-sublist {
+    list-style: none;
+    padding-left: 0.15rem;
+}
+
+.transit-sublist li {
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+}
+
+.transit-sublist li:last-child {
+    margin-bottom: 0;
+}
+
+.transit-sublist .transit-route {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.transit-sublist .transit-time {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.transit-sublist .transit-time small {
+    font-weight: 400;
+    color: var(--text-secondary);
+    margin-left: 0.25rem;
+}
+
+/* 景點介紹按鈕與彈窗樣式 */
+.btn-intro {
+    background-color: rgba(192, 92, 70, 0.08);
+    color: var(--theme-daegu);
+    border: 1px solid rgba(192, 92, 70, 0.25);
+}
+
+.btn-intro:hover {
+    background-color: var(--theme-daegu);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(192, 92, 70, 0.25);
+}
+
+.attraction-intro {
+    font-family: var(--font-sans);
+    line-height: 1.7;
+    color: #4a4a4a;
+}
+
+.intro-desc {
+    font-size: 0.95rem;
+    margin-bottom: 1.25rem;
+    color: var(--text-primary);
+    border-left: 3px solid var(--theme-daegu);
+    padding-left: 0.75rem;
+}
+
+.intro-section {
+    margin-bottom: 1.25rem;
+}
+
+.intro-sub-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.intro-sub-title i {
+    color: var(--theme-daegu);
+    font-size: 1.1rem;
+}
+
+.intro-section p {
+    font-size: 0.9rem;
+    padding-left: 1.45rem;
+}
+
+.intro-tip {
+    background-color: rgba(192, 92, 70, 0.05);
+    border-radius: 8px;
+    padding: 0.85rem 1rem;
+    font-size: 0.88rem;
+    color: #616161;
+    border: 1px dashed rgba(192, 92, 70, 0.2);
+    margin-top: 1.5rem;
+    line-height: 1.6;
+}
+
+.intro-tip i {
+    color: #fbc02d;
+    font-size: 1.1rem;
+    vertical-align: middle;
+    margin-right: 0.2rem;
 }
