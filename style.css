@@ -89,7 +89,7 @@ body {
 
 /* 首頁頂部 Banner */
 .app-header {
-    background: linear-gradient(135deg, #f7f3eb 0%, #ede6d8 100%);
+    background-color: var(--bg-color);
     padding: 2.5rem 1.5rem;
     text-align: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -102,6 +102,18 @@ body {
     margin: 0 auto;
     position: relative;
     z-index: 2;
+}
+
+/* 頂部傳統窗花圖騰壁紙 */
+.app-header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    opacity: 0.85; /* 提高不透明度，讓白色圖騰在淺色背景上更明顯 */
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='1.5'%3E%3Crect width='80' height='80' stroke-width='1'/%3E%3Cpath d='M40 0v80M0 40h80M0 0l80 80M80 0L0 80' stroke-width='0.8'/%3E%3Ccircle cx='40' cy='40' r='8' fill='%23ffffff'/%3E%3Ccircle cx='0' cy='0' r='4' fill='%23ffffff'/%3E%3Ccircle cx='80' cy='0' r='4' fill='%23ffffff'/%3E%3Ccircle cx='0' cy='80' r='4' fill='%23ffffff'/%3E%3Ccircle cx='80' cy='80' r='4' fill='%23ffffff'/%3E%3Cpath d='M 40 8 C 50 18 45 30 40 40 C 35 30 30 18 40 8 Z'/%3E%3Cpath d='M 40 72 C 50 62 45 50 40 40 C 35 50 30 62 40 72 Z'/%3E%3Cpath d='M 8 40 C 18 30 30 35 40 40 C 30 45 18 50 8 40 Z'/%3E%3Cpath d='M 72 40 C 62 30 50 35 40 40 C 50 45 62 50 72 40 Z'/%3E%3Cpath d='M 17 17 C 28 15 35 28 40 40 C 28 35 15 28 17 17 Z'/%3E%3Cpath d='M 63 63 C 52 65 45 52 40 40 C 52 45 65 52 63 63 Z'/%3E%3Cpath d='M 63 17 C 52 15 45 28 40 40 C 52 35 65 28 63 17 Z'/%3E%3Cpath d='M 17 63 C 28 65 35 52 40 40 C 28 45 15 52 17 63 Z'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 70px 70px;
+    z-index: 1;
+    pointer-events: none;
 }
 
 .app-title-badge {
@@ -227,7 +239,7 @@ body {
 /* 快速資訊快捷列 */
 .quick-info-section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
     margin-bottom: 2.5rem;
 }
@@ -265,7 +277,8 @@ body {
     margin-bottom: 0.5rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    gap: 0.5rem;
     border-bottom: 1px dashed rgba(0, 0, 0, 0.05);
     padding-bottom: 0.25rem;
 }
@@ -284,6 +297,7 @@ body {
     align-items: center;
     gap: 0.25rem;
     transition: var(--transition-smooth);
+    flex-shrink: 0;
 }
 
 .quick-card-list a:hover {
@@ -741,6 +755,10 @@ body {
 
 /* 響應式佈局調整 (桌機版/大平板) */
 @media (min-width: 768px) {
+    .quick-info-section {
+        grid-template-columns: 1fr 1fr;
+    }
+
     .app-header {
         padding: 4rem 2rem;
     }
@@ -805,7 +823,8 @@ body {
     margin-bottom: 0.25rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    gap: 0.5rem;
     border-bottom: none !important;
     padding-bottom: 0 !important;
 }
@@ -822,6 +841,8 @@ body {
 .transit-sublist .transit-time {
     font-weight: 600;
     color: var(--text-primary);
+    text-align: right;
+    min-width: max-content;
 }
 
 .transit-sublist .transit-time small {
@@ -847,6 +868,16 @@ body {
     font-family: var(--font-sans);
     line-height: 1.7;
     color: #4a4a4a;
+}
+
+.intro-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    margin-bottom: 1.25rem;
+    box-shadow: var(--shadow-sm);
+    display: block;
 }
 
 .intro-desc {

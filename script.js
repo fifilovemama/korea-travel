@@ -6,7 +6,7 @@ const itineraryData = [
     "title": "啟程！抵達釜山與大邱",
     "items": [
       { "time": "02:40", "expense": "", "activity": "02:40 TPE >>> 06:10 PUS (桃園機場 ✈ 釜山金海機場)", "content": "", "notes": "" },
-      { "time": "06:58", "expense": "", "activity": "東大邱車站 06:58 > 釜山車站 07:50 (KTX 001)", "content": "", "notes": "", "category": "transit" },
+      { "time": "05:20", "expense": "", "activity": "東大邱 ➔ 金海機場 (高速客運)", "content": "05:20 出發", "notes": "座位 21號", "category": "transit" },
       { "time": "07:00", "expense": "", "activity": "金海機場 > centum city站 (地鐵1hr)", "content": "08:30集合", "notes": "" },
       { "time": "08:00", "expense": "", "activity": "24小時嫩豆腐鍋 완뚝순두부", "content": "https://map.naver.com/p/entry/place/2014924086", "notes": "" },
       { "time": "09:00", "expense": "", "activity": "SPALAND 汗蒸幕 스파랜드 (3-4HR)", "content": "https://naver.me/5Q372Aqt\nkkday 門票|https://www.kkday.com/zh-tw/product/12213-busan-spa-land-centum-city-ticket", "notes": "" },
@@ -57,7 +57,7 @@ const itineraryData = [
       { "time": "", "expense": "", "activity": "晚餐隨機安排", "content": "", "notes": "" },
       { "time": "19:00", "expense": "", "activity": "壽城池 수성못 散步", "content": "https://naver.me/GeUR216e", "notes": "" },
       { "time": "", "expense": "", "activity": "開到半夜的景色咖啡廳 카페뷰즈 (Views)", "content": "https://naver.me/F74VCHRa", "notes": "" },
-      { "time": "", "expense": "", "activity": "入住：阿里郎韓屋旅館 아리랑", "content": "https://naver.me/xWTqQmFp", "notes": "", "category": "hotel" }
+      { "time": "", "expense": "", "activity": "阿里郎韓屋旅館 아리랑", "content": "https://naver.me/xWTqQmFp", "notes": "", "category": "hotel" }
     ]
   },
   {
@@ -66,14 +66,14 @@ const itineraryData = [
     "title": "KTX奔向首爾 ➔ 東大門設計之夜",
     "items": [
       { "time": "11:00", "expense": "", "activity": "河景咖啡廳 Melt 멜트", "content": "https://naver.me/xY47Oic0", "notes": "" },
-      { "time": "13:15", "expense": "", "activity": "東大邱站 13:15 > 首爾站 14:59 (KTX-CheongRyong 032)", "content": "", "notes": "一人票價 43,500 ₩ (已出票)", "category": "transit" },
+      { "time": "13:15", "expense": "", "activity": "東大邱站 13:15 > 首爾站 14:59 (KTX-CheongRyong 032)", "content": "", "notes": "", "category": "transit" },
       { "time": "15:00", "expense": "", "activity": "韓貞仙優格水果大福 한정선 (甜點)", "content": "https://naver.me/F3TtK4GA", "notes": "" },
       { "time": "", "expense": "", "activity": "首爾車站 > 鍾路五街", "content": "地鐵一號線 往市政廳方向", "notes": "" },
-      { "time": "16:00", "expense": "", "activity": "入住：阿博特斯泰東大門 아보트스테이 (Abbottstay)", "content": "放行李", "notes": "", "category": "hotel" },
+      { "time": "16:00", "expense": "", "activity": "阿博特斯泰東大門 아보트스테이 (Abbottstay)", "content": "放行李", "notes": "", "category": "hotel" },
       { "time": "16:30", "expense": "", "activity": "韓式蒸餃 創華堂 창화당 (點心)", "content": "https://naver.me/IgJC0bG9", "notes": "營業時間：10:00-23:30" },
-      { "time": "", "expense": "", "activity": "東大門綜合市場 동대문종합시장 逛街", "content": "https://naver.me/xUw1rx2F", "notes": "" },
-      { "time": "", "expense": "", "activity": "東大門設計廣場 동대문디자인플라자 (DDP)", "content": "https://naver.me/Fio7MOlX", "notes": "" },
-      { "time": "", "expense": "", "activity": "清溪川 청계천 散步", "content": "https://naver.me/FK5viboB", "notes": "" },
+      { "time": "", "expense": "", "activity": "東大門綜合市場 동대문종합시장 逛街", "content": "https://naver.me/xUw1rx2F", "notes": "", "introKey": "dongdaemun_market" },
+      { "time": "", "expense": "", "activity": "東大門設計廣場 동대문디자인플라자 (DDP)", "content": "https://naver.me/Fio7MOlX", "notes": "", "introKey": "ddp" },
+      { "time": "", "expense": "", "activity": "清溪川 청계천 散步", "content": "https://naver.me/FK5viboB", "notes": "", "introKey": "cheonggyecheon" },
       { "time": "20:00", "expense": "", "activity": "孫家一隻雞 손가네 닭한마리 (晚餐)", "content": "https://naver.me/5FmSpbrI", "notes": "營業時間：12:00-20:25" },
       { "time": "21:30", "expense": "", "activity": "優格世界冰淇淋 요거트월드", "content": "https://naver.me/F3TnuSG3", "notes": "營業時間：10:40-00:30" },
       { "time": "", "expense": "", "activity": "阿博特斯泰東大門 아보트스테이 (Abbottstay)", "content": "https://naver.me/FbOvHIOu", "notes": "", "category": "hotel" }
@@ -144,8 +144,8 @@ const itineraryData = [
       { "time": "11:30", "expense": "", "activity": "無垢屋 雞湯 무구옥 (午餐)", "content": "https://naver.me/FivZZffz", "notes": "" },
       { "time": "", "expense": "", "activity": "法國鐵板吐司 스탠다드브레드 (下午茶)", "content": "https://naver.me/53lKPriu", "notes": "" },
       { "time": "", "expense": "", "activity": "COEX Mall 星空圖書館 별마당도서관", "content": "https://naver.me/xprAqNM7", "notes": "無聊的話可以去晃晃拍照" },
-      { "time": "14:00", "expense": "", "activity": "江南 Dr. Evers 醫美診所 닥터에버스의원", "content": "https://naver.me/xrSMzQoV", "notes": "額頭肉毒玻尿酸，在即將入住的飯店隔壁" },
-      { "time": "15:00", "expense": "", "activity": "入住：首爾江南多米飯店 도미인 서울 강남 (Dormy Inn)", "content": "https://naver.me/5tJtlBKF", "notes": "辦理 Check-in，在飯店休息、泡溫泉耍廢", "category": "hotel" },
+      { "time": "14:00", "expense": "", "activity": "江南 Dr. Evers  닥터에버스의원", "content": "https://naver.me/xrSMzQoV", "notes": "" },
+      { "time": "15:00", "expense": "", "activity": "首爾江南多米飯店 도미인 서울 강남 (Dormy Inn)", "content": "https://naver.me/5tJtlBKF", "notes": "辦理 Check-in，在飯店休息、泡溫泉耍廢", "category": "hotel" },
       { "time": "21:00", "expense": "", "activity": "宵夜：韓式炸雞與飯店拉麵", "content": "享受多米飯店免費提供的夜鳴拉麵", "notes": "" }
     ]
   },
@@ -423,7 +423,7 @@ function renderTimeline(dayIndex) {
     // 景點介紹按鈕
     if (item.introKey) {
       actionButtonsHtml += `
-                <button class="btn btn-secondary btn-sm" style="margin-left: 0.5rem;" onclick="openModal('${item.introKey}')">
+        <button class="btn btn-intro btn-sm" style="margin-left: 0.5rem;" onclick="openModal('${item.introKey}')">
                     <i class="ri-information-line"></i> 景點介紹
                 </button>
             `;
@@ -504,8 +504,8 @@ function initQuickCards() {
                 <div class="transit-group-title"><i class="ri-calendar-line"></i> 6/21 (日)</div>
                 <ul class="transit-sublist">
                     <li>
-                        <span class="transit-route">東大邱 ➔ 釜山 KTX 001</span>
-                        <span class="transit-time">06:58 - 07:50<small>(6車 1D)</small></span>
+                        <span class="transit-route">東大邱 ➔ 金海機場 (高速客運)</span>
+                        <span class="transit-time">05:20 出發<small>(座位 21號)</small></span>
                     </li>
                     <li>
                         <span class="transit-route">釜山 ➔ 東大邱 SRT 374</span>
@@ -530,7 +530,7 @@ function initQuickCards() {
                 <div class="transit-group-title"><i class="ri-calendar-line"></i> 6/24 (三)</div>
                 <ul class="transit-sublist">
                     <li>
-                        <span class="transit-route">東大邱 ➔ 首爾 KTX-CheongRyong 032</span>
+                        <span class="transit-route">東大邱 ➔ 首爾 KTX 032</span>
                         <span class="transit-time">13:15 - 14:59<small>(7車 11A、11B)</small></span>
                     </li>
                 </ul>
@@ -543,7 +543,7 @@ function initQuickCards() {
                         <span class="transit-time">16:10 <small>(直達車)</small></span>
                     </li>
                     <li>
-                        <span class="transit-route">首爾仁川 ➔ 台北桃園 CI163</span>
+                        <span class="transit-route">仁川 T2 ➔ 桃園 T1 (CI163)</span>
                         <span class="transit-time">20:05 - 21:50</span>
                     </li>
                 </ul>
@@ -557,6 +557,7 @@ const attractionIntroductions = {
   yonggungsa: {
     title: "🌊 海東龍宮寺 해동용궁사",
     content: `
+      <img src="images/yonggungsa.jpg" class="intro-image" alt="海東龍宮寺">
       <div class="attraction-intro">
         <p class="intro-desc"><strong>海東龍宮寺</strong>是韓國唯一一座建於海邊礁石上的佛教寺廟，始建於1376年高麗恭愍王時期，由國師懶翁大師所建。依山傍海，景色極為壯麗，與一般深山幽谷中的寺廟截然不同。</p>
         <div class="intro-section">
@@ -576,6 +577,7 @@ const attractionIntroductions = {
   cheomseongdae: {
     title: "🌟 瞻星台 첨성대",
     content: `
+      <img src="images/cheomseongdae.jpg" class="intro-image" alt="瞻星台">
       <div class="attraction-intro">
         <p class="intro-desc"><strong>瞻星台</strong>是建於新羅第27代善德女王時期（公元632~647年）的罕見天文觀測台，也是東亞現存最古老的天文台。1962年被指定為國寶第31號。</p>
         <div class="intro-section">
@@ -595,6 +597,7 @@ const attractionIntroductions = {
   daereungwon: {
     title: "👑 大陵苑 대릉원",
     content: `
+      <img src="images/daereungwon.jpg" class="intro-image" alt="大陵苑">
       <div class="attraction-intro">
         <p class="intro-desc"><strong>大陵苑</strong>是慶州市區內規模最大的新羅時代王陵與貴族墓葬群，占地十幾萬坪，綠草如茵。園內散布著23座巨大的饅頭形古墓，猶如起伏的翠綠丘陵，是慶州「古都」景色的象徵地標。</p>
         <div class="intro-section">
@@ -614,6 +617,7 @@ const attractionIntroductions = {
   woljeonggyo: {
     title: "🌉 月精橋 월정교",
     content: `
+      <img src="images/woljeonggyo.jpg" class="intro-image" alt="月精橋">
       <div class="attraction-intro">
         <p class="intro-desc"><strong>月精橋</strong>是一座橫跨慶州南川的宏偉迴廊式木結構拱橋，最早建於新羅時代（公元760年景德王時期），是連接新羅王宮「月城」與南部地區的重要通道。曾毀於火災，後歷時多年考古研究，於2018年重現其宏大面貌。</p>
         <div class="intro-section">
@@ -633,6 +637,7 @@ const attractionIntroductions = {
   donggungwolji: {
     title: "🌙 東宮與月池 동궁과 월지",
     content: `
+      <img src="images/donggungwolji.jpg" class="intro-image" alt="東宮與月池">
       <div class="attraction-intro">
         <p class="intro-desc"><strong>東宮與月池</strong>（舊稱<strong>雁鴨池 안압지</strong>）是新羅王宮的離宮遺址，建於公元674年文武王時期。這裡曾是新羅王室設宴款待國賓、舉辦重大慶典的御花園，也是韓國代表性的古代宮苑園林。</p>
         <div class="intro-section">
@@ -652,6 +657,7 @@ const attractionIntroductions = {
   bukchon: {
     title: "🏡 北村韓屋村 북촌한옥마을",
     content: `
+      <img src="images/bukchon.jpg" class="intro-image" alt="北村韓屋村">
       <div class="attraction-intro">
         <p class="intro-desc"><strong>北村韓屋村</strong>位於首爾景福宮、昌德宮和宗廟之間，是一處擁有六百多年歷史的傳統韓屋居住區。這裡保存了數百棟朝鮮時代的瓦房韓屋，曾是王室宗親及高官顯赫所居住的貴族住宅區。</p>
         <div class="intro-section">
@@ -671,6 +677,7 @@ const attractionIntroductions = {
   gyeongbokgung: {
     title: "👑 景福宮 경복궁",
     content: `
+      <img src="images/gyeongbokgung.jpg" class="intro-image" alt="景福宮">
       <div class="attraction-intro">
         <p class="intro-desc"><strong>景福宮</strong>建於1395年，是朝鮮王朝建造的第一座、也是規模最大、設計最美的法宮（正宮）。它以北岳山為背景，格局雄偉，是首爾最具代表性的歷史地標與文化象徵。</p>
         <div class="intro-section">
@@ -690,6 +697,7 @@ const attractionIntroductions = {
   naksan: {
     title: "🧱 洛山公園城牆步道 낙산공원 성곽길",
     content: `
+      <img src="images/naksan.jpg" class="intro-image" alt="洛山公園城牆">
       <div class="attraction-intro">
         <p class="intro-desc"><strong>洛山公園城牆步道</strong>沿著海拔125公尺的洛山伸展，是「漢陽都城（首爾古城牆）」的一部分。這條歷史古牆始建於1396年朝鮮太祖時期，全長18.6公里，保護著古老的都城。</p>
         <div class="intro-section">
@@ -709,6 +717,7 @@ const attractionIntroductions = {
   suwon_hwaseong: {
     title: "🛡️ 水原華城 수원화성",
     content: `
+      <img src="images/suwon_hwaseong.jpg" class="intro-image" alt="水原華城">
       <div class="attraction-intro">
         <p class="intro-desc"><strong>水原華城</strong>是朝鮮王朝第22代正祖大王於1794-1796年間，為向其父親莊獻世子展現孝心、並建立強大國防而建造的城郭。1997年被列入聯合國教科文組織世界文化遺產，被譽為東亞城牆建築的巔峰之作。</p>
         <div class="intro-section">
@@ -728,6 +737,7 @@ const attractionIntroductions = {
   seojangdae: {
     title: "🔔 孝園之鐘 ‧ 西將臺 효원의 종 ‧ 서장대",
     content: `
+      <img src="images/seojangdae.jpg" class="intro-image" alt="西將臺">
       <div class="attraction-intro">
         <p class="intro-desc"><strong>西將臺</strong>位於水原華城的最高點八達山頂，是國王或軍事指揮官親自監督士兵訓練、發號施令的軍事指揮所。「將臺」意即將軍站立的平台。旁邊設有象徵孝心的<strong>孝園之鐘</strong>。</p>
         <div class="intro-section">
@@ -747,6 +757,7 @@ const attractionIntroductions = {
   dmz: {
     title: "🎖️ DMZ 非軍事區 DMZ",
     content: `
+      <img src="images/dmz.jpg" class="intro-image" alt="DMZ 非軍事區">
       <div class="attraction-intro">
         <p class="intro-desc"><strong>DMZ（非軍事區）</strong>是1953年《韓戰停戰協定》後，以軍事分界線（38度線）為中心，南北各後退2公里所劃出的4公里寬緩衝帶。它是世界上防備最嚴密、最獨特的冷戰歷史遺跡。</p>
         <div class="intro-section">
@@ -759,6 +770,66 @@ const attractionIntroductions = {
         </div>
         <div class="intro-tip">
           <strong>便利貼：</strong> 進入DMZ管制區<strong>必須攜帶個人護照正本</strong>以供軍方安檢（不可使用影本或電子檔）。管制區內嚴禁朝北韓方向揮手、大聲呼喊或在未授權區域拍照，請務必嚴格遵守導遊與駐守軍人的指令。
+        </div>
+      </div>
+    `
+  },
+  dongdaemun_market: {
+    title: "🛍️ 東大門綜合市場 동대문종합시장",
+    content: `
+      <img src="images/dongdaemun_market.jpg" class="intro-image" alt="東大門綜合市場">
+      <div class="attraction-intro">
+        <p class="intro-desc"><strong>東大門綜合市場</strong>是亞洲規模最大的專業市場之一，擁有超過50年歷史。這裡聚集了數千家批發與零售商，是韓國服飾、布料、飾品配件與手藝材料的流行發源地。</p>
+        <div class="intro-section">
+          <h4 class="intro-sub-title"><i class="ri-t-shirt-line"></i> 飾品與配件天堂</h4>
+          <p>市場的A棟和B棟五樓是超人氣的「飾品副料區」，販售各種耳環、項鍊、髮飾零件以及吊飾娃娃。喜愛手作或想挖寶便宜精緻飾品的人，絕對會在這裡逛到捨不得離開。</p>
+        </div>
+        <div class="intro-section">
+          <h4 class="intro-sub-title"><i class="ri-time-line"></i> 批發與零售文化</h4>
+          <p>這裡的營業時間非常特別，白天以零售為主，深夜則轉變為熱鬧非凡的批發市場，許多來自世界各地的代購都會拉著大型黑色批發袋在此穿梭，體驗韓國獨特的「東大門夜生活」。</p>
+        </div>
+        <div class="intro-tip">
+          <i class="ri-lightbulb-line"></i> <strong>便利貼：</strong> 綜合市場內部宛如迷宮，不同樓層與棟別賣的東西都不一樣。許多批發店家不支援刷卡，請務必<strong>準備充足的現金</strong>，且部分店家可能不單賣零散商品。
+        </div>
+      </div>
+    `
+  },
+  ddp: {
+    title: "🛸 東大門設計廣場 DDP",
+    content: `
+      <img src="images/ddp.jpg" class="intro-image" alt="東大門設計廣場">
+      <div class="attraction-intro">
+        <p class="intro-desc"><strong>東大門設計廣場 (DDP)</strong>由已故普立茲克建築獎得主 Zaha Hadid 設計，是世界最大規模的非標準建築。其宛如巨大銀色幽浮的外觀，已成為首爾最具代表性的現代地標。</p>
+        <div class="intro-section">
+          <h4 class="intro-sub-title"><i class="ri-shape-line"></i> 無直角的流線建築</h4>
+          <p>整座建築沒有任何一條直線或直角，外牆由45,133片形狀各異的鋁片拼貼而成。內部充滿未來感的迴旋步道與光影設計，不僅是設計迷的朝聖地，更是絕佳的網美拍照打卡點。</p>
+        </div>
+        <div class="intro-section">
+          <h4 class="intro-sub-title"><i class="ri-moon-clear-line"></i> 迷人的絢麗夜景</h4>
+          <p>入夜後，DDP的銀色鋁牆會透出充滿科技感的燈光。周邊經常舉辦大型展覽、首爾時裝週以及燈光秀（Seoul Light），搭配周圍不夜城的喧囂，展現首爾最前衛的一面。</p>
+        </div>
+        <div class="intro-tip">
+          <i class="ri-lightbulb-line"></i> <strong>便利貼：</strong> DDP 內部有設計商店（DDP Design Store），可以買到許多具備高質感的韓國原創設計商品與文創小物，非常適合挑選特別的伴手禮。
+        </div>
+      </div>
+    `
+  },
+  cheonggyecheon: {
+    title: "🌊 清溪川 청계천",
+    content: `
+      <img src="images/cheonggyecheon.jpg" class="intro-image" alt="清溪川">
+      <div class="attraction-intro">
+        <p class="intro-desc"><strong>清溪川</strong>是一條貫穿首爾市中心的活水河流。它曾被水泥覆蓋成為高架道路長達數十年，後經浩大的城市復育工程重見天日，成為都市中難得的生態綠洲與市民休憩聖地。</p>
+        <div class="intro-section">
+          <h4 class="intro-sub-title"><i class="ri-footprint-line"></i> 城市裡的避暑散步道</h4>
+          <p>沿著清澈的溪水兩側設有完善的行人步道。夏天時，您會看到許多韓國人脫下鞋子，坐在岸邊將雙腳泡在冰涼的溪水中聊天喝啤酒，享受繁華都市裡的片刻寧靜。</p>
+        </div>
+        <div class="intro-section">
+          <h4 class="intro-sub-title"><i class="ri-magic-line"></i> 跨越歷史的二十二座橋樑</h4>
+          <p>清溪川全長近6公里，上方橫跨了22座造型各異的橋樑。從清溪廣場壯觀的「彈簧」雕塑與螺旋瀑布開始，一路往下游走，夜晚點燈後水波蕩漾，浪漫氣氛滿分。</p>
+        </div>
+        <div class="intro-tip">
+          <i class="ri-lightbulb-line"></i> <strong>便利貼：</strong> 靠近東大門區段的清溪川，步道兩側經常有街頭藝人表演，或是舉辦夜市與燈節活動。逛完東大門買宵夜來這裡坐著吃，是最道地的體驗！
         </div>
       </div>
     `
@@ -806,10 +877,9 @@ function initModals() {
                 <div class="modal-date-group" style="margin-bottom: 1.5rem;">
                     <div class="modal-date-header" style="font-size: 1.1rem; font-weight: 700; color: var(--theme-daegu); margin-bottom: 0.75rem; border-left: 4px solid var(--theme-daegu); padding-left: 0.5rem;">📅 6/21 (日)</div>
                     <div style="margin-left: 0.75rem; margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px dashed rgba(0,0,0,0.08);">
-                        <div class="modal-section-title" style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.4rem; border-bottom: none; padding-bottom: 0;">KTX 001 (東大邱 ➔ 釜山)</div>
-                        <p style="font-size:0.9rem; margin-bottom: 0.2rem;">⏰ 時間：06:58 東大邱車站出發 ➔ 07:50 釜山車站抵達</p>
-                        <p style="font-size:0.9rem; margin-bottom: 0.2rem;">🎫 座位：6車 1D (正向)</p>
-                        <p style="font-size:0.9rem; margin-bottom: 0.2rem;">🎫 票號：80008-0609-10172-72</p>
+                        <div class="modal-section-title" style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.4rem; border-bottom: none; padding-bottom: 0;">高速客運 (東大邱 ➔ 金海機場)</div>
+                        <p style="font-size:0.9rem; margin-bottom: 0.2rem;">⏰ 時間：05:20 東大邱出發 ➔ 直達金海機場</p>
+                        <p style="font-size:0.9rem; margin-bottom: 0.2rem;">🎫 座位：21號</p>
                     </div>
                     <div style="margin-left: 0.75rem;">
                         <div class="modal-section-title" style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.4rem; border-bottom: none; padding-bottom: 0;">SRT 374 (釜山 ➔ 東大邱)</div>
@@ -837,7 +907,7 @@ function initModals() {
                         <div class="modal-section-title" style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.4rem; border-bottom: none; padding-bottom: 0;">KTX-CheongRyong 032 (東大邱 ➔ 首爾)</div>
                         <p style="font-size:0.9rem; margin-bottom: 0.2rem;">⏰ 時間：13:15 東大邱出發 ➔ 14:59 首爾抵達</p>
                         <p style="font-size:0.9rem; margin-bottom: 0.2rem;">🎫 座位：7車 11A、11B (正向，普通席)</p>
-                        <p style="font-size:0.9rem; margin-bottom: 0.2rem;">💰 票價：單人 43,500 ₩ (已出票)</p>
+                        <p style="font-size:0.9rem; margin-bottom: 0.2rem;">💰 票價：單人 43,500 ₩</p>
                     </div>
                 </div>
                 <div class="modal-date-group">
