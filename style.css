@@ -559,6 +559,18 @@ body {
     box-shadow: 0 4px 12px rgba(255, 91, 0, 0.2);
 }
 
+.btn-kkday-outline {
+    background-color: transparent;
+    color: #26C2CD; /* KKday standard brand color */
+    border: 1.5px solid #26C2CD;
+    font-weight: 700;
+}
+
+.btn-kkday-outline:hover {
+    background-color: rgba(38, 194, 205, 0.08);
+    box-shadow: 0 4px 12px rgba(38, 194, 205, 0.2);
+}
+
 .btn-secondary {
     background-color: var(--btn-secondary-bg);
     color: var(--text-primary);
@@ -864,6 +876,18 @@ body {
     box-shadow: 0 4px 12px rgba(192, 92, 70, 0.25);
 }
 
+.btn-restaurant {
+    background-color: rgba(230, 126, 34, 0.08);
+    color: #e67e22;
+    border: 1px solid rgba(230, 126, 34, 0.3);
+}
+
+.btn-restaurant:hover {
+    background-color: #e67e22;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(230, 126, 34, 0.25);
+}
+
 .attraction-intro {
     font-family: var(--font-sans);
     line-height: 1.7;
@@ -961,4 +985,36 @@ body {
     display: block;
     margin-bottom: 0.3rem;
     letter-spacing: 0.5px;
+}
+
+/* 雙人並排交通卡片 */
+.split-transit {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.split-item {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.split-item-title {
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.35rem;
+    font-size: 0.95rem;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+    padding-bottom: 0.25rem;
+}
+
+@media (max-width: 600px) {
+    .split-transit {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
