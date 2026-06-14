@@ -176,7 +176,7 @@ const itineraryData = [
       { "time": "09:00", "expense": "", "activity": "飯店早餐享用", "content": "", "notes": "" },
       { "time": "11:00", "expense": "", "activity": "首爾江南多米飯店 도미인 서울 강남 退房", "content": "", "notes": "" },
       { "time": "", "expense": "", "activity": "前往 > 首爾車站", "content": "", "notes": "", "category": "transit" },
-      { "time": "", "expense": "", "activity": "首爾路 7017 서울로 7017 空中花園", "content": "https://naver.me/GQ1lOwYW", "notes": "高速公路改建的公園，可眺望首爾車站全景" },
+      { "time": "", "expense": "", "activity": "首爾路 7017 서울로 7017 空中花園", "content": "https://naver.me/GQ1lOwYW", "notes": "首爾站旁，可散步。高速公路改建的公園，可眺望首爾車站全景", "introKey": "seoullo_7017" },
       { "time": "", "expense": "", "activity": "樂天超市 롯데마트 (最後大採購伴手禮)", "content": "https://naver.me/FfeOlQjt", "notes": "" },
       { "time": "16:00", "expense": "", "activity": "搭乘 AREX 直達車前往仁川機場第二航廈", "content": "預計搭乘 16:10 直達班次", "notes": "", "category": "transit" },
       { "time": "", "expense": "", "activity": "機場免稅店逛街與晚餐", "content": "", "notes": "" },
@@ -900,18 +900,18 @@ const attractionIntroductions = {
     content: `
       <img src="images/dalbeol_makchang.jpg" class="intro-image" alt="薄利多銷石板韓牛">
       <div class="attraction-intro">
-        <p class="intro-desc"><strong>薄利多銷石板韓牛 東萊溫泉川店（박리다매 돌판한우 동래온천천점）</strong>是一家位於釜山東萊區、主打高性價比最高等級 1++ (투쁠) 頂級韓牛的超人氣排隊名店。餐廳名稱「薄利多銷」直接體現了其經營理念：用非常實惠的價格，讓顧客品嚐到高品質的頂級牛肉。</p>
+        <p class="intro-desc"><strong>薄利多銷石板韓牛 東萊溫泉川店（박리다매 돌판한우 동래온천천점）</strong>是一間位於釜山東萊區、主打高 CP 值 1++（투쁠）韓牛的韓式烤肉名店。店名「薄利多銷」代表以相對親民的價格提供高等級韓牛，加上石板燒烤方式，能完整保留肉汁與牛肉香氣，因此一直是人氣很高的排隊餐廳。</p>
         <div class="intro-section">
-          <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 主餐肉品推薦</h4>
-          <p>✔ <strong>1++ 韓牛肋眼牛排（1++한우 꽃등심）</strong>：最強招牌特色！一般烤肉店會將肋眼周邊昂貴的「老饕肉」拆開高價販售，但這家店直接原汁原味大塊奉上，完美保留極致油花與濃郁肉香，入口即化。<br><br>✔ <strong>1++ 韓牛牛胸肉 / 牛五花（1++한우 차돌박이）</strong>：這裡的牛胸肉切得比一般店家更厚實大片，非常有彈性與嚼勁。店家特別細心去除純油脂部位，保留肉質與油花比例最完美的區塊，在石板上烤時散發高雅油香。</p>
+          <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 必點招牌與菜單推薦</h4>
+          <p>✔ <strong>1++ 韓牛肋眼（1++한우 꽃등심）</strong>：店內招牌首選。直接保留完整部位上桌，不特別拆售高級部位，油花分布均勻、肉質柔嫩，烤後能感受到濃郁牛香與細緻口感。<br><br>✔ <strong>1++ 韓牛牛胸肉／牛五花（1++한우 차돌박이）</strong>：比一般烤肉店切得更厚、更有存在感，兼具油脂香氣與肉感，放上石板後香氣特別明顯，是不少熟客固定必點。</p>
         </div>
         <div class="intro-section">
-          <h4 class="intro-sub-title"><i class="ri-magic-line"></i> 內行隱藏吃法</h4>
-          <p>🌟 <strong>厚切牛胸肉 ＋ 鮮嫩生拌韓牛（한우육회）</strong>：老饕激推！點一份甕裝現拌鮮甜生牛肉（1++等級），將它當作熱騰騰牛胸肉的「內餡」捲起來一起吃。熱與冷、彈牙與軟嫩的極端口感在口中交織，是大受好評的魔幻吃法。</p>
+          <h4 class="intro-sub-title"><i class="ri-magic-line"></i> 推薦搭配吃法</h4>
+          <p>🌟 <strong>厚切牛胸肉＋鮮嫩韓牛生拌（한우육회）</strong>：人氣組合吃法。將新鮮韓牛生拌包入剛烤好的牛胸肉一起享用，同時吃得到溫熱肉汁與滑嫩口感，層次更豐富。</p>
         </div>
         <div class="intro-section">
           <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 特色後食</h4>
-          <p>✔ <strong>荷葉包飯（연잎쌈밥）</strong>：充滿淡淡荷葉清香的糯米飯，非常解膩搭配。<br><br>✔ <strong>蕎麥冷麵（들기름 메밀국수）</strong>：加入香濃紫蘇油與芝麻碎的蕎麥麵，口感清爽咕溜，是烤肉後的完美結尾。</p>
+          <p>✔ <strong>荷葉包飯（연잎쌈밥）</strong>：帶有淡淡荷葉香氣的糯米飯，搭配烤肉能平衡油膩感。<br><br>✔ <strong>紫蘇油蕎麥麵（들기름 메밀국수）</strong>：以香濃紫蘇油與芝麻提味，口感清爽，是烤肉後很受歡迎的收尾選擇。</p>
         </div>
       </div>
     `
@@ -921,24 +921,7 @@ const attractionIntroductions = {
     content: `
       <img src="images/knu_cafeteria.jpg" class="intro-image" alt="慶北大學 Global Plaza 吃學餐">
       <div class="attraction-intro">
-        <p class="intro-desc">體驗道地韓國大學生日常的「單一白飯、國湯、主菜與多樣小菜組合」當日定食（정식）模式。</p>
-        <div class="intro-section">
-          <h4 class="intro-sub-title"><i class="ri-information-line"></i> 用餐資訊</h4>
-          <p>✔ <strong>位置：</strong> Global Plaza 3 樓<br>✔ <strong>營業時間：</strong> 平日（週一至週五）11:30 ~ 13:30（僅供應中午時段，週末及國定假日不營業）<br>✔ <strong>餐點價格：</strong> 每人 6,000 韓元（價格相當實惠，校外人士、外國人亦可點餐）</p>
-        </div>
-        <div class="intro-section">
-          <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 點餐方式</h4>
-          <p>餐廳入口處設有<strong>無人自動點餐機（키오스크）</strong>，一律採取卡片先結帳。購買食券後，至取餐檯排隊領取當日的主食與湯品，部分小菜則採自助式夾取。</p>
-        </div>
-      </div>
-    `
-  },
-  checkin_cheese: {
-    title: "🧀 Check in Cheese 餐廳",
-    content: `
-      <img src="images/checkin_cheese.jpg" class="intro-image" alt="Check in Cheese 餐廳">
-      <div class="attraction-intro">
-        <p class="intro-desc"><strong>Check in Cheese 皇理團路店</strong>是主打每日店內新鮮現做、無添加手工起司的義式餐廳。店內將招牌布拉塔起司結合低溫熟成窯烤披薩，是慶州皇理團路兼具打卡氛圍與道地美味的質感餐廳。</p>
+        <p class="intro-desc">��司結合低溫熟成窯烤披薩，是慶州皇理團路兼具打卡氛圍與道地美味的質感餐廳。</p>
         <div class="intro-section">
           <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 必點餐點推薦</h4>
           <p>✔ <strong>布拉塔生火腿披薩</strong>：招牌必點！Q彈窯烤餅皮搭配生火腿、芝麻葉與整顆手工布拉塔起司，乳香流心與鹹香完美融合。<br><br>✔ <strong>布拉塔冷拌沙拉義大利麵</strong>：冰鎮麵條搭配大量生菜與酸甜醬汁，拌入新鮮布拉塔起司，清脆解膩且非常開胃。<br><br>✔ <strong>香辣鮮蝦粉紅羅德義大利麵</strong>：特調番茄鮮奶油粉紅醬搭配肥美大蝦，微辣香濃、非常涮嘴（辣度可調整）。</p>
@@ -1003,15 +986,14 @@ const attractionIntroductions = {
     content: `
       <img src="images/cafe_melt.jpg" class="intro-image" alt="河景咖啡廳 Melt 멜트">
       <div class="attraction-intro">
-        <p class="intro-desc"><strong>Cafe Melt (카페 멜트)</strong>是位於大邱北區琴湖江（機場橋）旁，以絕美河景與得獎幾何建築聞名的指標性大巨型烘焙咖啡廳。</p>
+        <p class="intro-desc"><strong>Cafe Melt（카페 멜트）</strong>是位於大邱北區琴湖江（機場橋）旁的超大型河景烘焙咖啡廳，以開闊景觀與獨特建築設計聞名。整體空間結合咖啡、甜點與休憩功能，不論白天或夜晚都很適合停留放鬆。</p>
         <div class="intro-section">
-          <h4 class="intro-sub-title"><i class="ri-information-line"></i> 門市簡略介紹</h4>
-          <p>✔ <strong>建築設計大獎</strong>：曾榮獲 2019年大邱建築最優秀獎，獨特的清水模幾何線條外觀非常吸睛，錯落的落地窗設計讓每個座位都有不同視野。<br><br>✔ <strong>琴湖江第一排河景</strong>：整棟樓包含地下停車場共有5層（含頂樓天台），面向琴湖江與機場橋，視野毫無遮蔽，白天的綠意河景與夜晚的橋樑霓虹夜景都極美。<br><br>✔ <strong>多元放鬆空間</strong>：內部空間寬敞，高樓層設有適合靜心工作、讀書的插座座位，也有微風吹拂的戶外露台，是一座都市中的療癒空間。</p>
+          <h4 class="intro-sub-title"><i class="ri-information-line"></i> 門市特色介紹</h4>
+          <p>✔ <strong>得獎建築設計</strong>：曾獲得 2019 大邱建築最優秀獎，以清水模搭配幾何線條打造外觀，大面積落地窗設計讓不同座位區都有獨特景色。<br><br>✔ <strong>琴湖江第一排景觀</strong>：整棟空間共 5 層（含地下停車場與頂樓區域），正對琴湖江與機場橋，白天能欣賞河岸景色，夜晚則可看到橋樑燈光與城市夜景。<br><br>✔ <strong>寬敞放鬆空間</strong>：館內座位豐富，高樓層設有適合讀書、工作使用的插座區，也有能享受戶外景色的露台座位，是兼具景觀與舒適度的咖啡空間。</p>
         </div>
         <div class="intro-section">
-          <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 3大必點餐點推薦</h4>
-          <p style="font-size:0.9rem; margin-bottom:0.5rem; color:var(--text-secondary);">店內主打現點現烘焙的各式精緻麵包，以及多達30幾種的豐富飲品選項。</p>
-          <p>✔ <strong>千層酥皮與可頌類 (페이스트리/크루아상)</strong>：店內的絕對招牌！外皮烤得極致酥脆、內裡充滿濃郁高雅的奶油香氣，口感層次分明，是每次出爐都最快被掃空的品項。<br><br>✔ <strong>招牌鹽可頌 / 年輪麻糬捲 (모찌롤/소금빵)</strong>：口感扎實且帶有迷人的微鹹滋味；麻糬捲系列則是外皮Q彈、內餡綿密，與微苦的黑咖啡非常對味。<br><br>✔ <strong>五味子汽水 (오미자 에이드) / 新鮮果汁</strong>：除了水準極高的美式咖啡外，店內特調的五味子汽水酸甜清爽、色澤夢幻，是夏季消暑、不喝咖啡顧客的首選。</p>
+          <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 必點餐點推薦</h4>
+          <p>✔ <strong>千層酥皮與可頌系列（페이스트리 / 크루아상）</strong>：店內人氣招牌。外層酥脆、內部帶有濃郁奶油香氣，層次感豐富。<br><br>✔ <strong>鹽可頌／年輪麻糬捲（소금빵 / 모찌롤）</strong>：鹽可頌帶有淡淡鹹香與紮實口感；麻糬捲則兼具Q彈外皮與柔軟內餡，是很受歡迎的甜點選擇。<br><br>✔ <strong>五味子汽水（오미자 에이드）／新鮮果汁</strong>：除了咖啡品項外，清爽果香的飲品系列也很有人氣，特別適合夏天或不喝咖啡的顧客。</p>
         </div>
       </div>
     `
@@ -1021,10 +1003,10 @@ const attractionIntroductions = {
     content: `
       <img src="images/hanjeongseon.jpg" class="intro-image" alt="韓貞仙 綠 首爾車站店 한정선 녹 서울역점">
       <div class="attraction-intro">
-        <p class="intro-desc">從聖水洞紅透半邊天的新潮韓式傳統水果大福（大福/찹쌀떡）專賣店 <strong>韓貞仙 (Han Jung Sun)</strong>。首爾車站店以「綠（녹）」為主題，坐落於 KTX 首爾站大廳 2 樓。店內主打將整顆新鮮多汁的當季水果裹入細緻豆沙與極致 Q 彈的糯米皮中，並用色彩典雅的韓國傳統韓紙手工個別包裝，精緻的高級質感使其成為現今韓國最火紅的列車點心與首爾伴手禮首選。</p>
+        <p class="intro-desc"><strong>韓貞仙 首爾站店（한정선 서울역점）</strong>是從聖水洞人氣延伸而來的韓式水果大福專門店，以精緻韓式甜點風格受到歡迎。首爾站店位於 KTX 首爾站大廳 2 樓，主打將整顆新鮮水果包入細緻內餡與Q彈糯米皮，再以典雅韓紙風格包裝呈現，因此成為許多人購買列車點心與首爾伴手禮的人氣選擇。</p>
         <div class="intro-section">
-          <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 推薦必點</h4>
-          <p>✔ <strong>生草莓杜拜巧克力大福 (생딸기 두바이 찹쌀떡)</strong>：超級明星招牌！ 將脆口的卡達伊夫開心果杜拜巧克力、酸甜大顆的生草莓與細糯的麻糬皮完美結合，鹹甜交織且層次感驚艷，常在傍晚前就提早售罄。<br><br>✔ <strong>生草莓優格大福 (생딸기 요거트 찹쌀떡)</strong>：首爾車站店極受歡迎的限定感新口味！內餡改用濃郁略帶微酸的希臘優格質地與草莓搭配，口感像冰淇淋般滑順且完全不甜膩。<br><br>✔ <strong>生草莓大福 (생딸기 찹쌀떡) / 冰柿大福 (홍시 찹쌀떡)</strong>：初次品嚐的經典不敗款。草莓咬下立刻爆汁；而冰柿口味則是直接包入整塊香甜的冷凍柿子果肉，口感非常特別。</p>
+          <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 必點餐點推薦</h4>
+          <p>✔ <strong>生草莓杜拜巧克力大福（생딸기 두바이 찹쌀떡）</strong>：人氣招牌款。將酥脆口感的杜拜巧克力元素結合新鮮草莓與柔軟糯米皮，甜中帶層次，是熱門口味之一。<br><br>✔ <strong>生草莓優格大福（생딸기 요거트 찹쌀떡）</strong>：以帶有微酸感的優格內餡搭配草莓，整體口感滑順清爽，不容易感到甜膩。<br><br>✔ <strong>生草莓大福（생딸기 찹쌀떡）／冰柿大福（홍시 찹쌀떡）</strong>：經典入門推薦。草莓口味果香鮮明；冰柿版本則帶有冷凍柿子的綿密果肉口感，風味相當有特色。</p>
         </div>
       </div>
     `
@@ -1060,11 +1042,10 @@ const attractionIntroductions = {
     content: `
       <img src="images/yogurt_world.jpg" class="intro-image" alt="優格世界冰淇淋 요거트월드">
       <div class="attraction-intro">
-        <p class="intro-desc"><strong>優格世界 (Yogurt World)</strong> 是韓國超人氣的連鎖甜點品牌，主打以純天然成分製成的超濃郁優格冰淇淋與純手工希臘優格，搭配豐富的生鮮水果和獨家配料，讓你可以完全自由客製化專屬的健康系甜點。</p>
+        <p class="intro-desc"><strong>優格世界（Yogurt World）</strong>是韓國人氣連鎖優格甜點品牌，主打以濃郁優格冰淇淋與手工希臘優格為基底，搭配多種新鮮水果與配料自由組合，整體風格偏向清爽、健康系甜點，因此深受年輕族群喜愛。</p>
         <div class="intro-section">
           <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 必點招牌推薦</h4>
-          <p style="font-size:0.9rem; margin-bottom:0.5rem; color:var(--text-secondary);">想要直接點店家配好的經典組合，以下是韓國網友最推的三大必點品項：</p>
-          <p>✔ <strong>蜂蜜世界 (Honey World)</strong>：最經典的入門款。基底是微酸清爽的優格冰淇淋，搭配 100% 韓國產天然蜂巢蜜 (Honeycomb)、香脆格蘭諾拉麥片和香蕉，蜂巢蜜在口中爆漿的甜味與優格簡直是神仙組合。<br><br>✔ <strong>爆彈系列 (Fruit Bomb / 폭탄SET)</strong>：水果控絕對不能錯過。店家提供最高等級的生鮮水果，其中以草莓爆彈 (冬天限定)、哈密瓜爆彈和葡萄柚爆彈最受歡迎，水果堆得像小山一樣，誠意十足。<br><br>✔ <strong>奧利奧世界 (Oreo World)</strong>：巧克力控的靈魂歸屬。由奧利奧餅乾碎、布朗尼方塊、巧克力醬與棉花糖組成的美式甜點風，跟酸甜的優格冰淇淋搭配後，濃郁卻完全不覺得甜膩。</p>
+          <p>✔ <strong>蜂蜜世界（Honey World）</strong>：經典入門首選。以酸甜優格冰淇淋搭配天然蜂巢蜜、格蘭諾拉麥片與香蕉，蜂蜜香氣與優格酸度平衡，是品牌代表性組合。<br><br>✔ <strong>爆彈系列（Fruit Bomb／폭탄 SET）</strong>：水果控推薦必點。使用大量新鮮水果搭配優格，其中以草莓爆彈（季節限定）、哈密瓜爆彈與葡萄柚爆彈最受歡迎，水果份量豐富、口感清爽。<br><br>✔ <strong>奧利奧世界（Oreo World）</strong>：適合喜歡濃郁甜點的人。以奧利奧碎片、布朗尼、巧克力醬與棉花糖搭配優格冰淇淋，甜度與酸味相互平衡，整體不會過於厚重。</p>
         </div>
       </div>
     `
@@ -1074,11 +1055,10 @@ const attractionIntroductions = {
     content: `
       <img src="images/artist_bakery.jpg" class="intro-image" alt="ARTIST BAKERY 아티스트 베이커리">
       <div class="attraction-intro">
-        <p class="intro-desc"><strong>ARTIST BAKERY (아티스트베이커리)</strong> 是首爾排隊神店「倫敦貝果博物館」推出的全新姐妹品牌，主打將傳統鹽可頌（鹽麵包）與法棍，化身為數十種兼具視覺藝術與極致澱粉香氣的英倫復古風麵包沙龍。</p>
+        <p class="intro-desc"><strong>ARTIST BAKERY（아티스트베이커리）</strong>是首爾人氣品牌「倫敦貝果博物館」推出的姐妹烘焙品牌，以鹽麵包與法棍為核心，結合英倫復古風格與精緻烘焙概念，打造兼具外觀與口感的特色麵包店，因此成為安國站一帶相當熱門的排隊名店。</p>
         <div class="intro-section">
           <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 必點招牌推薦</h4>
-          <p style="font-size:0.9rem; margin-bottom:0.5rem; color:var(--text-secondary);">來到這家位於安國站的打卡地標，在玲瑯滿目的烘焙藝術品中，韓國網友與觀光客一致盛讚的四大必點菜色如下：</p>
-          <p>✔ <strong>原味鹽麵包 (Plain Salt Bread)</strong>：店內雷打不動的經典基礎。特別分為「Soft（鬆軟）」與「Hard（偏硬、帶法棍嚼勁）」兩種口感。底部被奶油煎得超級酥脆，咬下去滿滿的黃油爆漿感與岩鹽的鹹香相互交織，是測試這家店實力的必吃款。<br><br>✔ <strong>香蔥蒜味奶油鹽麵包 (Spring Onion Garlic Cream Cheese)</strong>：視覺與味覺的雙重暴擊。在切開的鹽可頌內塞滿特調的爆量香蔥大蒜乳酪醬，蔥花的清甜中和了乳酪的濃厚，鹹香濃郁，在韓國社群（如 Threads）上擁有極高人氣。<br><br>✔ <strong>牛奶奶油鹽麵包 (Milk Cream Salt Bread)</strong>：甜味愛好者的 NO.1。在帶有微鹹度的酥脆麵包中，夾入像雲朵般輕盈、完全不甜膩的純淨鮮奶油，鹹甜交織的「單純美味」讓人一吃上癮。<br><br>✔ <strong>招牌番茄濃湯 (Tomato Soup)</strong>：內用絕對不能遺漏的靈魂餐點！湯頭濃郁酸甜、帶著溫和的義式香料味，熱騰騰的濃湯直接用剛出爐的鹽麵包或法棍蘸著吃，美味程度甚至超越了麵包本身。</p>
+          <p>✔ <strong>原味鹽麵包（Plain Salt Bread）</strong>：店內經典必吃款，提供 Soft（鬆軟） 與 Hard（較有嚼勁） 兩種口感選擇。外層酥香、底部帶有奶油煎烤香氣，搭配岩鹽風味，能吃到最純粹的麵包特色。<br><br>✔ <strong>香蔥蒜味奶油乳酪鹽麵包（Spring Onion Garlic Cream Cheese）</strong>：人氣創意口味。將香蔥與蒜香乳酪醬大量填入麵包中，蔥香與奶香平衡，口味濃郁卻不厚重，是許多人推薦的熱門品項。<br><br>✔ <strong>牛奶奶油鹽麵包（Milk Cream Salt Bread）</strong>：甜系代表口味。酥脆麵包夾入滑順鮮奶油，利用微鹹與奶香形成層次感，整體口感輕盈不甜膩。<br><br>✔ <strong>招牌番茄濃湯（Tomato Soup）</strong>：內用推薦搭配。番茄風味濃郁、帶有淡淡香料香氣，搭配剛出爐的鹽麵包或法棍一起享用，是很受歡迎的組合。</p>
         </div>
       </div>
     `
@@ -1088,11 +1068,10 @@ const attractionIntroductions = {
     content: `
       <img src="images/dotori_garden.jpg" class="intro-image" alt="DOTORI GARDEN 도토리가든">
       <div class="attraction-intro">
-        <p class="intro-desc"><strong>Dotori Garden (도토리가든 안국점)</strong> 是首爾安國站極具代表性的網美咖啡廳，主打將百年老韓屋改造成彷彿吉卜力動畫般的療癒森林感小屋，提供現點現做的浮誇系蜂巢希臘優格、造型可愛的橡子果點心與全天候早午餐。店內吉祥物是一隻藍色小精靈「Tori」，走進店裡就像踏入童話世界。</p>
+        <p class="intro-desc"><strong>Dotori Garden（도토리가든 안국점）</strong>是首爾安國站人氣很高的韓屋風咖啡廳，將傳統韓屋空間結合森林感與童話氛圍，打造出溫暖療癒的用餐環境。店內以現做希臘優格、特色烘焙與全天候早午餐聞名，也是許多人到北村、安國一帶會安排造訪的熱門咖啡廳。</p>
         <div class="intro-section">
           <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 必點招牌推薦</h4>
-          <p style="font-size:0.9rem; margin-bottom:0.5rem; color:var(--text-secondary);">在豐富的烘焙區與優格吧中，最受歡迎的四大必點菜色如下：</p>
-          <p>✔ <strong>蜂巢蜜希臘優格碗 (Live Greek Yogurt Bowl)</strong>：店內雷打不動的 NO.1 招牌。這裡的希臘優格非常濃稠、帶有如奶油般的質地。現點現做的優格碗最上層會霸氣地放上一整塊生鮮蜂巢蜜 (Honeycomb)，點綴大量手工烤格蘭諾拉麥片與生鮮水果（如藍莓或草莓），酸甜交織、極具嚼勁，非常適合當早午餐或下午茶。<br><br>✔ <strong>橡子果瑪德蓮 (Dotori Madeleine)</strong>：呼應店名「Dotori（韓文橡子果之意）」的視覺系招牌。外觀做成超級逼真的小橡子形狀，下半部還裹了巧克力或沾醬。口味非常多樣，其中以伯爵茶（Earl Grey）與抹茶最熱門，雖然口感部分評價因人而異（偏紮實鬆散），但因為長相太可愛，幾乎每桌都會拿一盤來拍照打卡。<br><br>✔ <strong>橡子鮮奶油麵包 (Dotori Bread Plain)</strong>：麵包控的最愛。外觀同樣是放大版的橡子果外型，切開後裡面擠滿了爆量卻甜而不膩的鮮奶油，麵包體質地非常鬆軟，是店內經常一出爐就被夾光的明星麵包。<br><br>✔ <strong>鹽可頌早午餐盤 (Salt Bread Brunch / Pretzel Brunch)</strong>：如果你是早上 8 點一開門就想來吃正餐，這裡的早午餐盤水準很高。包含酥脆的招牌鹽可頌（或椒鹽捲餅麵包），搭配鬆軟的炒蛋、新鮮酪梨、培根與炒菇，再點一碗濃郁的蘑菇馬鈴薯濃湯，就是最完美的首爾晨間享受。</p>
+          <p>✔ <strong>蜂巢蜜希臘優格碗（Live Greek Yogurt Bowl）</strong>：店內代表餐點。以濃厚滑順的希臘優格為基底，搭配整塊蜂巢蜜、手工格蘭諾拉與新鮮水果，酸甜平衡且層次豐富，很適合作為早午餐或下午茶。<br><br>✔ <strong>橡子果瑪德蓮（Dotori Madeleine）</strong>：呼應品牌特色的招牌甜點。以橡子造型呈現，口味選擇多樣，其中伯爵茶與抹茶最受歡迎，外型精緻、拍照辨識度很高。<br><br>✔ <strong>橡子鮮奶油麵包（Dotori Bread Plain）</strong>：人氣烘焙品項。鬆軟麵包搭配份量充足的鮮奶油內餡，整體口感輕盈、不會過甜，是許多人必拿的熱門選擇。<br><br>✔ <strong>鹽可頌早午餐盤（Salt Bread Brunch／Pretzel Brunch）</strong>：想吃正餐時很推薦。以鹽可頌或椒鹽捲搭配炒蛋、酪梨、培根與配菜，整體份量完整，也很適合當作首爾旅行的早餐選擇。</p>
         </div>
       </div>
     `
@@ -1102,16 +1081,10 @@ const attractionIntroductions = {
     content: `
       <img src="images/anam_soup.jpg" class="intro-image" alt="安岩豬肉湯飯 안암">
       <div class="attraction-intro">
-        <p class="intro-desc"><strong>安岩 (ANAM / 안암)</strong> 是首爾北村連續多年榮獲米其林必比登推介的精緻現代風湯飯店，主打顛覆傳統、融入青陽辣椒與甘藍菜綠色香油的創新視覺系豬肉湯飯，在黑白摩登的吧檯空間為饕客帶來如法式料理般優雅的味覺饗宴。</p>
+        <p class="intro-desc"><strong>安岩（ANAM／안암）</strong>是位於首爾北村、連續多年獲得米其林必比登推介的人氣湯飯店，以現代手法重新詮釋韓式豬肉湯飯。店內空間以簡潔摩登風格呈現，結合精緻擺盤與創新風味，帶來不同於傳統湯飯店的用餐體驗。</p>
         <div class="intro-section">
           <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 必點招牌推薦</h4>
-          <p style="font-size:0.9rem; margin-bottom:0.5rem; color:var(--text-secondary);">這家店的菜單品項極度精簡，但每一道都是精心雕琢的藝術品，店內最受歡迎的三大必點菜色如下：</p>
-          <p>✔ <strong>安岩豬肉湯飯（ANAM Gukbap）</strong>：跨越傳統界線的靈魂招牌。清澈溫潤的豬骨湯底，表面漂浮著用青陽辣椒與羽衣甘藍特製的碧綠香油，視覺極其吸睛。配料大手筆選用軟嫩多汁的西班牙杜洛克（Duroc）薄切豬肩肉與兩根輕輕一撥就骨肉分離的豬肋排，米飯則混入大麥增加嚼勁。建議先喝原味清湯，再依個人喜好加入爆量香菜，最後灑上桌前的花椒粉（四川山椒），湯頭會瞬間轉化出類似東南亞或日式拉麵的異國層次感，非常神奇！<br><br>✔ <strong>岩石炸豬排（Rock Fried Pork / 바위튀김）</strong>：衝擊視覺的驚豔副餐。外觀呈現如濟州島火山玄武岩般的焦黑碳色，是利用墨魚汁麵衣包裹豬里肌肉炸至外酥內嫩。咬下去肉汁直接在口中爆發，搭配沾裹隨盤附上的蒔蘿艾利醬（Dil Aioli），酸甜溫潤、帶有優雅草本香氣，酥脆卻毫不油膩，被眾多食客盛讚美味度完全不輸主角湯飯。<br><br>✔ <strong>萊姆白切肉（Lime Jeyuk / 제육）</strong>：極具巧思的清爽肉盤。這不是傳統一整盤紅通通的韓式炒豬肉，而是類似冷盤的低溫舒肥薄切豬肉片。肉片帶有淡淡的レモングラス（香茅）香氣，食用時將一片肥瘦勻稱的豬肉包裹著旁邊附贈的香菜、紅蔥頭與萊姆沙拉一同入口，口感輕盈微酸，完美平衡了豬肉的油脂感。</p>
-        </div>
-        <div class="intro-tip">
-          <i class="ri-lightbulb-line"></i> <strong>探店小撇步：</strong><br>
-          <strong>遠端排隊：</strong>這家店僅有約 20 個吧檯座位，現場排隊往往需要等候 1 小時以上。建議在每日營業時間開始後，直接使用 [Catchtable] 或 [테이블링 (Tabling) APP] 進行線上遠端抽號碼牌，就能一邊在北村逛街一邊等進場。<br>
-          <strong>特級肉量：</strong>如果食量比較大，點餐時可以加價將湯飯升級為「肉特多（고기 특）」選項，但必須在入座前一開始點餐時就決定，入座後是無法追加肉量的唷！
+          <p>✔ <strong>安岩豬肉湯飯（ANAM Gukbap）</strong>：店內代表招牌。以溫潤豬骨湯為基底，搭配青陽辣椒與綠色香油點綴，湯頭層次豐富。配料使用柔嫩豬肉與燉煮入味的排骨，搭配加入大麥的米飯，整體口感更有層次。建議先品嚐原味，再依喜好加入香菜與調味粉，風味變化更明顯。<br><br>✔ <strong>岩石炸豬排（Rock Fried Pork／바위튀김）</strong>：人氣副餐選擇。外層炸衣酥脆、內部保有肉汁，搭配特製蒔蘿風味醬料，整體口感濃郁卻不厚重，是許多人會一起加點的熱門品項。<br><br>✔ <strong>萊姆白切肉（Lime Jeyuk／제육）</strong>：清爽風格肉料理。以薄切豬肉搭配香草、洋蔥與萊姆風味配料，利用微酸與清新的層次平衡肉香，適合作為搭配湯飯共享享用。</p>
         </div>
       </div>
     `
@@ -1121,10 +1094,10 @@ const attractionIntroductions = {
     content: `
       <img src="images/hwangsengga.jpg" class="intro-image" alt="黃生家刀切麵 황생가칼국수">
       <div class="attraction-intro">
-        <p class="intro-desc"><strong>黃生家刀切麵 (황생가칼국수)</strong> 是首爾北村三清洞連續多年榮獲米其林必比登推介的傳奇老字號，主打以高檔韓牛骨、牛胸肉慢火熬製的雪白濃郁湯頭，搭配純手工現包的超大王餃子，為無數饕客帶來最正宗、溫潤的韓式傳統麵食體驗。這家緊鄰景福宮與國立現代美術館的排隊名店，菜單雖然走純樸扎實路線，但以下四大必點菜色絕對不能錯過：</p>
+        <p class="intro-desc"><strong>黃生家刀切麵（황생가칼국수）</strong>是位於首爾北村三清洞、連續多年獲得米其林必比登推介的韓式傳統麵食名店，以濃郁卻溫和的韓牛骨湯頭與手工製作料理聞名。鄰近景福宮與國立現代美術館，是許多人安排北村散步時會順道造訪的人氣餐廳。</p>
         <div class="intro-section">
           <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 必點招牌推薦</h4>
-          <p>✔ <strong>牛骨刀切麵 (Sagol Kalguksu / 사골칼국수)</strong>：店內當之無愧的靈魂主角。湯頭使用韓牛骨與牛胸肉長時間熬煮，呈現乳白色的濃郁質感，味道卻極其溫潤清爽、毫不油膩。手工切製的麵條吸飽了牛骨精華，口感軟Q滑順，上層再鋪上炒過的櫛瓜、大蔥、洋蔥與香菇片作為高明配料，暖胃又療癒。<br><br>✔ <strong>手工大王餃子 (Wang Mandu / 왕만두)</strong>：每桌必點的爆漿副餐。每天早上由店員在門口以純熟的手速現場手工現包，餃子皮薄卻帶有嚼勁，內餡塞滿了新鮮豬肉、豆腐、蔥花與韭菜，體積巨大、內餡扎實且飽含清甜肉汁，與台灣重口味的餃子不同，走的是清爽自然的韓式家常風味。<br><br>✔ <strong>白切韓牛肉 (Hanu Suyuk / 한우수육)</strong>：老饕與多人聚餐的豪華首選。嚴選高品質的韓國產韓牛（Hanu），經過完美的火候慢燉切成薄片，肉質極其軟嫩、一入口就能品嚐到濃郁高雅的牛肉香氣，沾上一點特製醬汁或是夾著配菜一同享用，口感精緻又奢侈。<br><br>✔ <strong>夏季限定：冷豆漿麵 (Kongguksu / 콩국수)</strong>：酷暑時節的最強救星！每年夏天限定推出的冷麵，湯底是用新鮮黃豆磨製成的濃郁豆漿，並大手筆混入芝麻與花生等堅果調配，喝起來質地極度濃稠、甚至能感受到細微的豆沙顆粒，冰涼沁爽又充滿堅果醇香，是韓國人夏天最愛的消暑聖品。</p>
+          <p>✔ <strong>牛骨刀切麵（Sagol Kalguksu／사골칼국수）</strong>：店內經典招牌。以韓牛骨與牛肉長時間熬製出乳白色湯底，風味濃厚卻不油膩，搭配手工刀切麵與蔬菜配料，口感滑順、很有韓式家常湯麵特色。<br><br>✔ <strong>手工大王餃子（Wang Mandu／왕만두）</strong>：人氣必點副餐。每日現包製作，餃子尺寸飽滿，內餡以豬肉、豆腐與蔬菜搭配，整體口味偏清爽，與牛骨湯麵特別適合一起享用。<br><br>✔ <strong>白切韓牛肉（Hanu Suyuk／한우수육）</strong>：適合多人分食的推薦品項。將韓牛慢燉後切片呈現，肉質柔嫩，能吃到牛肉本身的香氣與口感層次。<br><br>✔ <strong>夏季限定冷豆漿麵（Kongguksu／콩국수）</strong>：夏天熱門限定餐點。以現磨黃豆製成濃郁豆漿湯底，入口帶有自然豆香與滑順口感，是韓國夏季很具代表性的消暑料理。</p>
         </div>
       </div>
     `
@@ -1134,11 +1107,10 @@ const attractionIntroductions = {
     content: `
       <img src="images/heehee_soba.jpg" class="intro-image" alt="鯖魚蕎麥麵 喜喜 희희">
       <div class="attraction-intro">
-        <p class="intro-desc"><strong>喜喜 (희희)</strong> 是從首爾孔德站紅透半邊天、近年遷至鐘路5街的大人氣日式純手作蕎麥麵專賣店，主打使用 100% 韓國江原道封坪蕎麥手工製麵，並搭配耗時熬製的 20 多種天然熟成日式醬油（Tsuyu），在木質調的靜謐空間裡提供極致清爽與富有層次的冷、溫蕎麥麵與熟成豬排。</p>
+        <p class="intro-desc"><strong>喜喜（희희）</strong>是位於首爾鐘路一帶的人氣日式蕎麥麵專門店，以手工蕎麥麵與細緻日式定食風格受到歡迎。店內主打使用 100% 韓國江原道封坪蕎麥製作麵體，搭配熟成日式醬汁與安靜溫暖的木質空間，提供兼具清爽與層次感的蕎麥料理。</p>
         <div class="intro-section">
           <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 必點招牌推薦</h4>
-          <p style="font-size:0.9rem; margin-bottom:0.5rem; color:var(--text-secondary);">不論是炎炎夏日還是微涼的季節，這家隱身在巷弄內的精緻日料有以下三大必點招牌：</p>
-          <p>✔ <strong>烤鯖魚溫蕎麥麵 (고등어구이 온소바)</strong>：店內最具視覺衝擊與靈魂特色的 NO.1 招牌。將一整片去骨、外皮烤得金黃酥脆且富含油脂的挪威青花魚（鯖魚）直接鋪在熱騰騰的蕎麥麵上。原本擔心會有魚腥味，但融入了手作鰹魚醬油高湯後，魚肉的鮮甜與熟成醬油的煙燻香氣完美契合，熱氣讓 100% 純蕎麥麵的獨特麥香更加四溢，是老饕來店必鎖定的特色料理。<br><br>✔ <strong>炸蝦/炸大麥魚冷蕎麥麵 (튀김 냉소바)</strong>：夏日消暑的絕對首選。這裡的冷蕎麥汁是用二十多種天然食材慢火熟成，鹹甜適中、回甘帶有清香。冰鎮過的手工蕎麥麵體極具嚼勁、口感爽滑，搭配旁邊現點現炸、外衣像羽毛般酥脆且完全不油膩的大蝦天婦羅（새우튀김）或當季大麥魚（보리멸），一口冰涼麵條、一口酥脆炸物，爽口度破表。<br><br>✔ <strong>熟成里肌/腰內豬排 (돈카츠)</strong>：被眾多韓國網友笑稱「被蕎麥麵耽誤的頂級豬排專賣店」。嚴選優質的韓國產本地黑豬肉進行長時間低溫熟成，外層裹上細緻的麵包粉炸至黃金酥脆。尤其是里肌豬排（등심카츠），邊緣帶有一層豐厚的黃金油脂（비계），咬下去肉質細嫩、肉汁瘋狂噴發，沾上現磨山葵（わさび）和岩鹽，美味程度完全不輸外面的專業排隊豬排店。</p>
+          <p>✔ <strong>烤鯖魚溫蕎麥麵（고등어구이 온소바）</strong>：店內代表餐點。將炙烤後香氣濃郁的鯖魚搭配熱蕎麥麵與日式高湯，魚肉油脂與湯頭融合後風味溫潤，能同時感受到魚香與蕎麥麵本身的麥香。<br><br>✔ <strong>炸蝦／炸大麥魚冷蕎麥麵（튀김 냉소바）</strong>：夏季人氣選擇。冰鎮手工蕎麥麵搭配熟成冷麵醬汁，口感清爽有彈性，再配上現炸天婦羅，兼具酥脆與清涼感，很適合天氣較熱時享用。<br><br>✔ <strong>熟成里肌／腰內豬排（돈카츠）</strong>：店內另一項高人氣品項。使用熟成豬肉搭配細緻麵衣油炸，外酥內嫩、肉汁飽滿，搭配山葵與鹽品嚐能更凸顯肉香，也是許多人會加點的推薦料理。</p>
         </div>
       </div>
     `
@@ -1148,10 +1120,10 @@ const attractionIntroductions = {
     content: `
       <img src="images/jjama.jpg" class="intro-image" alt="石板炸醬 ZZAMA 돌판짜장 짜마">
       <div class="attraction-intro">
-        <p class="intro-desc"><strong>石板炸醬 ZZAMA (돌판짜장 짜마 수원행궁동본점)</strong> 是傳承三代、擁有 25 年歷史的 수원 經典老字號中餐館，主打將熱騰騰的招牌炸醬麵盛裝在 300 度的炙熱大石板上，在上桌時掀開象徵「水原華城」的特色錐形帽罩，帶來視覺與嗅覺雙重震撼的極致不熄火美味。這家從水原仁溪洞火紅到進駐行宮洞（行理團路）的排隊名店，菜單極度專精，以下三大必點招牌與絕配吃法絕對是每桌必備：</p>
+        <p class="intro-desc"><strong>石板炸醬 ZZAMA（돌판짜장 짜마 수원행궁동본점）</strong>是位於水原行宮洞、擁有多年歷史的人氣中式餐館，以高溫石板料理方式打造特色炸醬麵聞名。招牌料理會以高溫石板直接上桌，不只保留熱度，也讓整體用餐體驗更具特色，因此成為行宮洞相當熱門的排隊名店。</p>
         <div class="intro-section">
           <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 必點招牌推薦</h4>
-          <p>✔ <strong>招牌石板炸醬麵 (Dolpan Jjajang / 돌판짜장)</strong>：全店的核心靈魂。店家會將沾滿微辣濃郁春醬的Q彈麵條盛在 300 度的石板上送上桌，掀開特色錐形罩後，香氣瞬間隨白煙爆發！配料極其浮誇，包含爆量且完全不腥的鮮嫩花枝、大蝦仁、酥炸鍋巴（누룽지）、炸餃子以及牽絲起司。因為石板的熱度，吃到最後一口都是熱騰騰的，底部還會形成焦香的特製鍋巴。<br><br>✔ <strong>白雪糯米糖醋肉 (Bakseol Tangsuyuk / 찹쌀 백설탕수육)</strong>：點餐時通常會與石板炸醬組成「雙人經典套餐」的完美配角。外觀像一朵朵白圓的雲朵（구름탕수육），外皮使用 100% 糯米麵衣炸得極致酥脆卻不油膩，裡面包著厚實、無腥味且多汁的現炸豬肉，外酥內糯的口感沾上酸甜沾醬簡稱一絕。<br><br>✔ <strong>隱藏版靈魂：自助拌飯 (Rice / 볶음밥 비빔)</strong>：這是老饕去這家店絕對不能漏掉的最後一個步驟。當石板上的炸醬麵吃得差不多時，記得去店內的自助區盛一碗白飯，倒進依然炙熱的石板上，與剩餘的炸醬、海鮮、鍋巴碎和蔬菜殘汁均勻翻炒。白飯會迅速被石板烤得像高麗菜高冷炒飯一樣高鬆，醬汁完全吸附在飯粒上，美味程度甚至常超越炸醬麵本身！</p>
+          <p>✔ <strong>招牌石板炸醬麵（Dolpan Jjajang／돌판짜장）</strong>：店內代表餐點。將炸醬麵盛裝於高溫石板上，搭配海鮮、蔬菜與豐富配料一起拌炒，麵條能持續維持熱度，最後還會形成微微焦香的鍋巴口感，是來店最推薦的品項。<br><br>✔ <strong>白雪糯米糖醋肉（Bakseol Tangsuyuk／찹쌀 백설탕수육）</strong>：熱門搭配副餐。以糯米麵衣製作出酥脆外層，搭配厚實豬肉與酸甜醬汁，外酥內嫩，是許多人會一起搭配炸醬麵享用的組合。<br><br>✔ <strong>自助拌飯吃法（볶음밥 비빔）</strong>：店內人氣隱藏吃法。當炸醬麵吃到後段時，可搭配白飯加入仍有餘溫的石板中與剩餘醬汁一起拌勻，讓米飯吸收醬香與配料風味，形成不同層次的收尾吃法。</p>
         </div>
       </div>
     `
@@ -1161,52 +1133,49 @@ const attractionIntroductions = {
     content: `
       <img src="images/yomi_udon.jpg" class="intro-image" alt="寬烏龍 요미우돈교자">
       <div class="attraction-intro">
-        <p class="intro-desc"><strong>YUMMY UDON GYOZA (요미우돈교자)</strong> 是席捲韓國各大商圈（如首爾延南洞、江南、水原行宮洞）的超人氣排隊日式創意食堂，主打將日本傳統的烏龍麵與日式煎餃結合韓式在地食材與新穎視覺，並在復古、充滿日式車站氛圍的洗鍊空間內，呈現口感極致Q彈的寬幅冷麵與爆醬系脆皮煎餃。</p>
+        <p class="intro-desc"><strong>YUMMY UDON GYOZA（요미우돈교자）</strong>是韓國人氣很高的日式創意食堂品牌，在首爾延南洞、江南與水原行宮洞等地都有分店。店內以特色烏龍麵與日式煎餃為核心，結合日韓風味與復古車站氛圍空間，因此成為年輕族群很喜歡的人氣排隊店。</p>
         <div class="intro-section">
           <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 必點招牌推薦</h4>
-          <p style="font-size:0.9rem; margin-bottom:0.5rem; color:var(--text-secondary);">這家店不論哪家分店幾乎一開店就客滿，根據品牌官方公布的年度銷售熱門排行榜，以下是初訪必點的三大招牌菜色：</p>
-          <p>✔ <strong>超寬幅冷烏龍麵 (Nimono Kawa Udon / 넓적우동)</strong>：當之無愧的鎮店之寶（NO.1 明星商品）！源自日本群馬縣的桐生烏龍麵（ひもかわう동），將麵條製成厚度僅 1mm、寬度卻達數公分的薄寬紙片狀。麵條整齊地鋪在冰鎮碎冰上以維持極致的嚼勁，食用時用筷子夾起一片，依序浸入隨盤附上的清爽冷鰹魚醬汁（Tsuyu）與濃郁黃金胡麻醬（참깨소스）中。那種同時具備滑溜、柔軟卻在口中回彈的獨特面體口感，全韓國極少地方能吃得到。<br><br>✔ <strong>地雞烏龍麵 (Jidori Udon / 지도리우동)</strong>：不習慣吃冷麵或遇到微涼天氣時的溫暖救星（銷售排行 NO.2）。湯底是以日本九州地方傳統手法熬製的濃郁雞骨高湯為基底，大手筆加入了帶有強烈火烤焦香的大塊雞肉、烘烤過的大蔥、表菇與多種蔬菜。熱騰騰的濃郁湯頭伴隨著強烈的煙燻炭火香氣，吸飽湯汁的手工粗圓烏龍麵扎實有嚼勁，是非常有層次感的一道經典。<br><br>✔ <strong>大阪燒風脆皮煎餃 (Okonomiyaki Gyoza / 오코노미야끼 교자)</strong>：單吃烏龍麵怕太單調時最完美的副餐選擇。店家將底部煎得像蜂巢般酥脆的金黃日式羽翼煎餃上，鋪滿了大量鮮甜爽脆的高麗菜絲，最後淋上濃郁的大阪燒醬、美乃滋，並撒上爆量跳舞的柴魚片。咬下去外皮喀擦作響，內餡則是多汁的豬肉蔬菜，搭配上方高麗菜絲的爽脆，完美中和了傳統煎餃的油膩感。</p>
+          <p>✔ <strong>超寬幅冷烏龍麵（Nimono Kawa Udon／넓적우동）</strong>：店內代表餐點。使用超寬版烏龍麵搭配冰鎮方式呈現，麵體口感滑順又有彈性，可搭配冷醬汁與胡麻醬享用，清爽又很有特色。<br><br>✔ <strong>地雞烏龍麵（Jidori Udon／지도리우동）</strong>：適合喜歡熱食的人。以濃郁雞高湯為基底，搭配炙烤雞肉、蔬菜與手工烏龍麵，整體風味溫潤且層次豐富，是店內高人氣品項之一。<br><br>✔ <strong>大阪燒風脆皮煎餃（Okonomiyaki Gyoza／오코노미야끼 교자）</strong>：推薦一起搭配的副餐。酥脆煎餃搭配高麗菜絲、大阪燒醬與柴魚片，兼具香氣與口感層次，能平衡烏龍麵的整體風味。</p>
         </div>
       </div>
     `
   },
   brussels_fry: {
-    title: "🍟 布魯塞爾炸薯條 브뤼셀프라이",
+    title: "🍟 布魯塞爾炸薯條 브뤼셀프라이 수원행궁본점",
     content: `
-      <img src="images/brussels_fry.jpg" class="intro-image" alt="布魯塞爾炸薯條 브뤼셀프라이">
+      <img src="images/brussels_fry.jpg" class="intro-image" alt="布魯塞爾炸薯條 브뤼셀프라이 수원행궁본점">
       <div class="attraction-intro">
-        <p class="intro-desc"><strong>布魯塞爾炸薯條 (Brussels Fries / 브뤼셀프라이 수원행궁본점)</strong> 是水原行宮洞（行理團路）風靡全網的街頭排隊美食，主打引進歐洲比利時傳統的兩次油炸工藝，提供厚實酥脆的大容量薯條，並讓饕客從 35 種以上的特製醬汁、調味粉與頂級配料中自由客製化出專屬的浮誇系散步點心。這家店緊鄰水原華城城牆，由於不設室內用餐區（純外帶專賣店），幾乎所有人都是點完後拿在手上，一邊沿著唯美的古城牆散步一邊享用。</p>
+        <p class="intro-desc"><strong>布魯塞爾炸薯條（Brussels Fries／브뤼셀프라이 수원행궁본점）</strong>是位於水原行宮洞的人氣街頭美食店，以比利時風格炸薯條與多樣客製化搭配聞名。店內主打雙重油炸工法製作厚實酥脆的薯條，並提供多種醬料與配料自由組合，很適合買著邊走邊逛水原華城。</p>
         <div class="intro-section">
-          <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 必點招牌與黃金組合推薦</h4>
-          <p style="font-size:0.9rem; margin-bottom:0.5rem; color:var(--text-secondary);">來到這裡，你可以依照以下最受韓國大胃王 Youtuber 及網友推崇的三大黃金組合與明星必點來點餐：</p>
-          <p>✔ <strong>經典歐風：原味直切薯條＋惡魔醬＋蒜味美乃滋 (Straight Cut + Diablo + Garlic Dipping)</strong>：熱愛鹹香濃郁感的老饕首選。基底選用經典的「直切細薯（Straight Cut）」，剛出爐時外酥內軟。沾醬選擇微辣帶勁的比利時風味「惡魔醬（Diablo）」與極度濃郁的「蒜味美乃滋」雙醬混搭，上層再撒上墨西哥辣椒碎（Jalapeno）與帕瑪森起司粉，香辣解膩，讓人完全停不下來。<br><br>✔ <strong>美式奢華：V型契型薯條＋松露起司醬＋牛排醬 (Wedge Cut + Truffle Cheese + Steak Sauce)</strong>：馬鈴薯控的重口味天堂。將馬鈴薯帶皮切塊的「契型薯條（Wedge Cut）」能吃到更飽滿、綿密的馬鈴薯泥口感。搭配香氣極致高雅的松露起司醬與美式牛排醬，最後一定要額外加購特製培根碎（Bacon Bits）或脆洋蔥酥，多層次的酥脆口感在口中爆發，奢侈感十足。<br><br>✔ <strong>夏日靈魂伴侶：純白手工牛奶雪昔 (Milk Shake / 밀크쉐이크)</strong>：薯條區之外每人必手拿一杯的明星副餐。店家特別引進歐洲傳統配方製成濃稠、奶香極度炸裂的手工奶昔，最熱門的是純牛奶原味與香濃的焦糖花生（Caramel Peanut）口味。用熱騰騰、帶有岩鹽鹹味的薯條直接蘸著冰涼甜美的牛奶雪昔吃，這種「極致鹹甜交織（단짠）」的邪惡美式吃法在韓國社群上極度爆紅！</p>
+          <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 必點招牌推薦</h4>
+          <p>✔ <strong>經典直切薯條＋惡魔醬＋蒜味美乃滋（Straight Cut + Diablo + Garlic Dipping）</strong>：經典人氣組合。直切薯條外酥內鬆，搭配帶有微辣風味的醬料與蒜香美乃滋，鹹香層次豐富，是第一次造訪很適合嘗試的搭配。<br><br>✔ <strong>契型薯條＋松露起司醬＋牛排醬（Wedge Cut + Truffle Cheese + Steak Sauce）</strong>：喜歡濃郁風味的人推薦。厚切帶皮薯條能吃到更明顯的馬鈴薯口感，搭配松露起司與醬料後風味更有層次，也常會再加點培根碎或脆洋蔥增加口感。<br><br>✔ <strong>手工牛奶雪昔（Milk Shake／밀크쉐이크）</strong>：店內人氣飲品。口感濃厚滑順，牛奶與焦糖花生口味都很受歡迎，也很適合搭配熱薯條一起享用，形成經典鹹甜組合。</p>
         </div>
       </div>
     `
   },
   slow_sunnyside: {
-    title: "🥞 慢速陽光 슬로우써니사이드",
+    title: "🍳 Slow Sunny Side 슬로우써니사이드",
     content: `
-      <img src="images/slow_sunnyside.jpg" class="intro-image" alt="慢速陽光 슬로우써니사이드">
+      <img src="images/slow_sunnyside.jpg" class="intro-image" alt="Slow Sunny Side 슬로우써니사이드">
       <div class="attraction-intro">
-        <p class="intro-desc"><strong>Slow Sunny Side (슬로우써니사이드)</strong> 是水原行宮洞（行理團路）極具人氣的法式復古風歐式早午餐餐酒館，主打拒絕任何市售現成醬料，堅持全手工熬製醬汁並結合季節食材，在採光極佳且帶有歐式應客室氛圍的兩層樓老宅空間中，提供精緻的義式麵食、手工洋芋球（뇨끼）與全天候創意定食。</p>
+        <p class="intro-desc"><strong>Slow Sunny Side（슬로우써니사이드）</strong>是位於水原行宮洞的人氣歐式早午餐餐酒館，以法式復古氛圍與手工料理受到歡迎。店內強調自製醬料與季節食材搭配，在明亮舒適的老宅空間中提供義式料理、創意早午餐與特色定食，是當地很受歡迎的聚餐與拍照餐廳。</p>
         <div class="intro-section">
           <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 必點招牌推薦</h4>
-          <p style="font-size:0.9rem; margin-bottom:0.5rem; color:var(--text-secondary);">這家店因為餐點精緻、環境好拍，深受首爾和水原在地年輕人的喜愛，店內最受歡迎的三大明星菜色如下：</p>
-          <p>✔ <strong>味增牛排燉飯 (Miso Steak Risotto / 미소 스테이크 리조또)</strong>：常年高居店內銷售 NO.1 的必點招牌。主廚大手筆選用美國 Prime 頂級特選牛下肩胛襯底牛排（부채살）切成骰子狀煎至完美熟度，搭配大蔥油慢火炒香的洋蔥與香菇。燉飯基底融入了帶有淡淡發酵鹹香的日式味噌調味，米粒保有極具層次感的咬勁與活潑嚼勁，牛肉的豐厚肉汁與微鹹回甘的味噌燉飯堪稱絕配。<br><br>✔ <strong>香蝦酪梨開放式三明治 (Egg Shrimp Sandwich / 에그쉬림프샌드위치)</strong>：視覺與清新風味的完美化身。在烤至酥脆的比利時切片麵包（Slap Bread）上，像藝術品般層層堆疊起新鮮魯科拉生菜（芝麻葉）、高達起司、鮮切番茄、現切酪梨，以及用大蒜黃油爆炒的Q彈鮮蝦。最後淋上店內特調的「 jalapeno 檸檬馬乃滋」，微辣微酸、清爽且份量十足。<br><br>✔ <strong>朝陽朝氣晨間套餐 (Morning Joy Set / 모닝조이 세트)</strong>：早鳥們最推薦的極高 CP 值首選。套餐由極具罪惡感的「蜜汁馬鈴薯起司吐司（허니 감자치즈 토스트）」搭配一碗香濃的「法式巧達蛤蜊濃湯（클램차우더 스프）」組成。吐司內塞滿兩種牽絲起司與綿密薯泥，沾著香氣濃郁、放滿蛤蜊肉與馬鈴薯丁的熱濃湯一起吃，非常療癒。</p>
+          <p>✔ <strong>味增牛排燉飯（Miso Steak Risotto／미소 스테이크 리조또）</strong>：店內人氣代表餐點。將香煎牛排搭配味噌風味燉飯呈現，米飯保有口感層次，搭配牛肉香氣與微鹹發酵風味，整體濃郁卻不厚重。<br><br>✔ <strong>香蝦酪梨開放式三明治（Egg Shrimp Sandwich／에그쉬림프샌드위치）</strong>：清爽系人氣餐點。以烤麵包搭配鮮蝦、酪梨、生菜與起司，再加入特製醬料提味，口感豐富且份量充足。<br><br>✔ <strong>朝陽朝氣晨間套餐（Morning Joy Set／모닝조이 세트）</strong>：適合早餐或早午餐時段享用。組合包含起司馬鈴薯吐司與濃湯，兼具飽足感與溫暖風味，是店內熱門套餐選擇。</p>
         </div>
       </div>
     `
   },
   jehotang: {
-    title: "🍵 傳統特色茶：醍醐湯 제호탕",
+    title: "☕ 韓國傳統茶飲 醍醐湯 제호탕",
     content: `
-      <img src="images/jehotang.jpg" class="intro-image" alt="傳統特色茶：醍醐湯 제호탕">
+      <img src="images/jehotang.jpg" class="intro-image" alt="韓國傳統茶飲 醍醐湯 제호탕">
       <div class="attraction-intro">
-        <p class="intro-desc">朝鮮宮廷的消暑秘方！由烏梅與多種韓藥材熬製而成的傳統茶飲，酸甜回甘，非常有特色。</p>
+        <p class="intro-desc">以朝鮮宮廷傳統茶文化為靈感，主打以烏梅與多種韓方材料熬製而成的特色茶飲，入口帶有自然酸甜與回甘層次，是韓國相當具代表性的傳統消暑飲品。</p>
         <div class="intro-section">
           <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 特色餐點推薦</h4>
-          <p>✔ <strong>冰鎮醍醐湯</strong>：夏天喝非常解渴消暑。<br>✔ <strong>傳統韓菓</strong>：搭配茶飲最對味。</p>
+          <p>✔ <strong>冰鎮醍醐湯</strong>：店內人氣招牌。以冰涼方式呈現，酸甜清爽、口感溫潤，很適合夏天飲用。<br><br>✔ <strong>傳統韓菓</strong>：推薦搭配茶飲一起享用。以樸實細緻的甜味襯托茶香，更能感受韓式傳統點心的風味特色。</p>
         </div>
       </div>
     `
@@ -1216,10 +1185,10 @@ const attractionIntroductions = {
     content: `
       <img src="images/obanjeong.jpg" class="intro-image" alt="五方全雞 오반정">
       <div class="attraction-intro">
-        <p class="intro-desc"><strong>五方全雞 (오반정)</strong> 是首爾新堂洞與東廟一帶人氣炸裂的復古風烤雞餐酒館，主打將 48 小時低溫熟成的整隻鮮雞，在 2 樓透明櫥窗內以高溫不熄火的慢火精準旋轉電烤，搭配帶有神祕發財寓意的山寨老鋪裝潢與 1 樓的清涼露天夜場氛圍。這家店甚至連《黑白大廚》林熙元主廚也曾慕名造訪，在濃郁的懷舊氛圍下，以下是韓國網友最推的三大必點招牌與靈魂副餐：</p>
+        <p class="intro-desc"><strong>五方全雞（오반정）</strong>是位於首爾新堂洞與東廟一帶的人氣烤雞餐酒館，以復古氛圍與現烤整雞聞名。店內主打經過熟成處理的整隻雞，再以旋轉烤爐慢火烘烤，打造外酥內嫩的口感，加上懷舊風格空間與戶外座位氛圍，成為當地相當受歡迎的聚餐選擇。</p>
         <div class="intro-section">
           <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 必點招牌推薦</h4>
-          <p>✔ <strong>黃金通鸛 (Golden Chicken / 황금통닭)</strong>：店內最具代表性的當家主力。嚴選優質雞肉經過 48 小時獨家祕方熟成，在爐內烤至表皮呈現完美的黃金焦糖色。最厲害的是，它的雞肚子裡塞滿了耗時 8 小時烹調的 5 種綜合珍貴菇類與大蒜，外皮薄脆香酥、肉質極度多汁軟嫩（甚至被網友笑稱用牙齦就能輕易咬斷），吸飽菇類香氣的雞肉單吃就充滿層次。<br><br>✔ <strong>靈魂佐餐：特製酸甜韭菜拌五魚 (韭菜拌青瓜 / 오이무침)</strong>：網路上評價甚至快超越烤雞的明星副餐！這可不是一般的醃蘿蔔，而是店家特製的爆量清脆黃瓜與鮮嫩韭菜，拌入微辣帶甜的獨門韓式醬汁。口感爽脆解膩、帶點活潑的맵싹（微辣）後勁，與油脂豐厚的電烤雞一同入口，是老饕公認的靈魂吃法。<br><br>✔ <strong>香酥脆皮大麥雞前餅 (雞肉煎餅 / 닭전)</strong>：多人聚餐極力推薦的特色下酒菜。不同於傳統海鮮煎餅，店家將鮮嫩的雞肉撕成條狀與大蔥、蔬菜混和，拉薄後在鐵板上煎到極致酥脆。邊緣咬下去喀擦作響，中間卻保有雞肉的軟嫩，沾上特製的醬油沾醬，跟冰涼的生啤酒是絕配。</p>
+          <p>✔ <strong>黃金通雞（Golden Chicken／황금통닭）</strong>：店內招牌代表餐點。整隻雞經熟成後慢火烘烤至金黃色澤，外皮酥香、肉質柔嫩多汁，並搭配菇類與蒜香風味，層次感豐富，是第一次造訪最推薦的選擇。<br><br>✔ <strong>特製黃瓜韭菜拌菜（오이무침）</strong>：人氣搭配小菜。以清脆黃瓜與韭菜拌入酸甜微辣醬汁，口感清爽解膩，很適合搭配烤雞一起享用。<br><br>✔ <strong>雞肉煎餅（닭전）</strong>：多人共享推薦副餐。將雞肉與蔬菜製成煎餅，外層酥脆、內部保有柔嫩口感，搭配醬汁後風味更完整，也是常見的下酒料理選擇。</p>
         </div>
       </div>
     `
@@ -1229,36 +1198,36 @@ const attractionIntroductions = {
     content: `
       <img src="images/seoryeong_naengmyeon.jpg" class="intro-image" alt="西領總店 서령 본점">
       <div class="attraction-intro">
-        <p class="intro-desc"><strong>西領總店 (Seoryung / 서령 본점)</strong> 是從江華島紅回首爾、近年連續榮獲米其林必比登推介的平壤冷麵新星神店，主打不添加一粒澱粉的 100% 純手工蕎麥麵體，搭配慢火熬製 24 小時、肉香極致濃郁的純韓牛母牛高湯，在首爾站與南大門旁掀起現象級的排隊狂潮。這家被各大美食節目（如《生活之達人》）與美食家聖經爭相報導的頂級韓食餐館，以下是每桌必點的四大天王品項：</p>
+        <p class="intro-desc"><strong>西領總店（Seoryung／서령 본점）</strong>是從江華島發展至首爾、近年獲得米其林必比登推介的人氣平壤冷麵專門店，以 100% 純蕎麥手工麵 與長時間熬製的韓牛高湯聞名。店內以現代方式呈現平壤冷麵風格，保留清爽細膩的特色，同時帶出更鮮明的層次感，因此成為首爾站周邊熱門韓食名店之一。</p>
         <div class="intro-section">
           <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 必點招牌推薦</h4>
-          <p>✔ <strong>西領水冷麵 (Seoryung Pure Buckwheat Noodles / 서령 순면)</strong>：當之無愧的鎮店靈魂（NO.1 明星商品）。麵條由 30 年經歷的蕎麥大師現場製作，100% 純蕎麥帶來一咬即斷、細緻高雅的獨特穀物香氣。最驚豔的是湯頭，打破傳統平壤冷麵「像抹布水」的淡蔑刻板印象，這裡的湯底使用高檔韓牛母牛慢燉，一入口清澈冰涼卻帶著非常霸道、純粹的深邃肉香，回甘極強，堪稱現代平壤冷麵的最高傑作。<br><br>✔ <strong>白切豬杭前肉 (Pork Jowl Suyuk / 항정 제육)</strong>：老饕一入座絕對先指名追加的靈魂冷盤副餐。與一般使用五花肉的白切肉不同，店家大手筆選用富含精緻油脂、口感脆彈的豬松阪肉（杭前肉/Jowl）。經過完美火候烹調後完全不油膩，口感極其軟嫩卻帶有活潑的Q彈度，夾著隨盤附贈的特製酸甜無鹽醃蘿蔔絲（무생채）與蝦醬一同入口，油脂香氣在口中瞬間化開。<br><br>✔ <strong>紫蘇油蕎麥冷麵 (Perilla Oil Buckwheat Noodles / 들기름 메밀국수)</strong>：不習慣傳統冷麵湯頭者的絕對救星。在同樣優質的 100% 純手工蕎麥麵上，淋上極致香醇、毫無油耗味的特級冷壓高山紫蘇油，並撒上爆量的烘烤細海苔酥與碎芝麻。一上桌香氣直接炸裂，均勻拌開後，紫蘇油的草本清香、海苔的鹹香與蕎麥麵的淡淡甜味在舌尖交織，非常高雅迷人。<br><br>✔ <strong>正宗平壤手工大萬壽 (Wang Mandu / 접시만두)</strong>：極高 CP 值的扎實點心。每天在店內純手工現包，外皮帶有溫和的麵香與嚼勁，內餡塞滿了新鮮豬肉、大量捏碎的豆腐與清甜的韭菜花。走的是最正宗的平壤風味——淡雅、多汁、飽滿，完全不靠厚重的調味料掩蓋食材本身的鮮甜，沾一點桌上特製的「西領醋（서령초）」，美味度會再上升一個層次。</p>
+          <p>✔ <strong>西領水冷麵（Seoryung Pure Buckwheat Noodles／서령 순면）</strong>：店內代表餐點。使用純手工蕎麥麵製作，麵體帶有自然穀物香氣與細緻口感，搭配韓牛高湯呈現清爽卻富有深度的風味，是第一次造訪最推薦的選擇。<br><br>✔ <strong>白切豬杭前肉（Pork Jowl Suyuk／항정 제육）</strong>：人氣冷盤副餐。選用油脂分布均勻的部位慢火料理，肉質柔嫩又保有口感，搭配蘿蔔絲與醬料一起享用更能提升整體層次。<br><br>✔ <strong>紫蘇油蕎麥冷麵（Perilla Oil Buckwheat Noodles／들기름 메밀국수）</strong>：不想選湯麵時的人氣品項。將純蕎麥麵搭配紫蘇油、海苔與芝麻拌勻，香氣清新、口感滑順，能更直接感受到蕎麥本身的風味。<br><br>✔ <strong>平壤手工大餃子（Wang Mandu／접시만두）</strong>：推薦搭配享用的經典副餐。每日手工製作，內餡以豬肉、豆腐與蔬菜為主，風味清爽自然，很適合搭配冷麵一起享用。</p>
         </div>
       </div>
     `
   },
   metcha: {
-    title: "🍵 맷차 METCHA 명동본점",
+    title: "🍵 METCHA 맷차 명동본점",
     content: `
-      <img src="images/metcha.jpg" class="intro-image" alt="맷차 METCHA 명동본점">
+      <img src="images/metcha.jpg" class="intro-image" alt="METCHA 맷차 명동본점">
       <div class="attraction-intro">
-        <p class="intro-desc"><strong>METCHA (맷차 명동본점)</strong> 是首爾明洞最具代表性的 4 層樓獨棟高質感大形咖啡廳，主打將韓國傳統文化中的「石磨（맷돌）」融入現代茶飲，現場現磨 100% 濟州島有機頂級大麥與茶葉，為抹茶控與手沖咖啡愛好者帶來極致濃郁且香氣天然的原生系飲品體驗。走進這家兼具傳統工藝與現代極簡風的店面，以下是韓國在地網友與觀光客一致瘋傳的三大必點招牌：</p>
+        <p class="intro-desc"><strong>METCHA（맷차 명동본점）</strong>是位於首爾明洞的人氣大型茶飲咖啡廳，以韓國傳統「石磨（맷돌）」概念結合現代茶文化聞名。店內主打現場研磨茶葉與穀物製作飲品，透過簡約空間與細緻工藝，提供濃郁且保留原始香氣的抹茶與咖啡體驗，是抹茶愛好者很受歡迎的造訪地點。</p>
         <div class="intro-section">
           <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 必點招牌推薦</h4>
-          <p>✔ <strong>石磨抹茶鮮奶茶 (Matcha Milk Tea / 말차 밀크티)</strong>：當之無愧的鎮店靈魂（NO.1 明星商品）。店家將頂級的濟州島 100% 有機茶葉放上特製石磨，在顧客面前現場研磨成細緻的粉末，再與醇厚的鮮奶完美融合。喝起來帶有鮮明的新鮮草本香氣、微微的溫和苦甜感與回甘的細緻甜味。最棒的是，這裡的甜度可以完全客製化調整，推薦給想品嚐純粹抹茶原香的老饕。<br><br>✔ <strong>抹茶冰淇淋咖啡 (Matcha Coffee Ice Cream / 말차 커피 아이스크림)</strong>：視覺與層次感爆棚的夢幻阿芙佳朵（Affogato）。基底是店內特製的頂級手作抹茶冰淇淋，口感細緻滑順、奶香與抹香兼具。上桌時會由店員或自行淋上用石磨研磨的原豆所萃取出的香濃濃縮咖啡（Espresso）。咖啡的炭焙苦香完美中和了冰淇淋的甜度，甘甜與微苦在口中交織，美味程度甚至被網友盛讚完全不輸大牌專賣店。<br><br>✔ <strong>烘焙綠茶奶蓋拿鐵 (Roasted Green Tea Cream Latte / 볶은 녹차 크림 라떼)</strong>：如果你是不習慣抹茶草本味的人，這款是超完美的替代方案。基底是由經過高溫烘焙過、帶有濃郁焙茶（Hojicha）堅果香氣的焙茶拿鐵，最上層則鋪上一層厚厚、帶有微鹹微甜質地的綿密手作奶蓋。飲用時絕對不要攪拌，直接大口喝下，讓醇厚的奶蓋與帶有煙燻堅果香的焙茶在口中自然交融，口感極其絲滑且富有層次。</p>
+          <p>✔ <strong>石磨抹茶鮮奶茶（Matcha Milk Tea／말차 밀크티）</strong>：店內代表飲品。以現場研磨的濟州茶葉搭配鮮奶製作，能喝到明顯茶香與自然回甘，整體濃郁卻不厚重，也可依喜好調整甜度。<br><br>✔ <strong>抹茶冰淇淋咖啡（Matcha Coffee Ice Cream／말차 커피 아이스크림）</strong>：人氣甜點系飲品。以抹茶冰淇淋搭配濃縮咖啡呈現，融合茶香、奶香與咖啡苦韻，層次感豐富，很適合喜歡阿芙佳朵風格的人。<br><br>✔ <strong>烘焙綠茶奶蓋拿鐵（Roasted Green Tea Cream Latte／볶은 녹차 크림 라떼）</strong>：不習慣抹茶苦韻時推薦選擇。以焙茶風味拿鐵搭配綿密奶蓋，整體帶有淡淡堅果與茶香，口感滑順、接受度也較高。</p>
         </div>
       </div>
     `
   },
   miss_jokbal: {
-    title: "🍖 弘大豬腳 홍대족발",
+    title: "🐷 豬腳小姐 미쓰족발",
     content: `
-      <img src="images/miss_jokbal.jpg" class="intro-image" alt="弘大豬腳 홍대족발">
+      <img src="images/miss_jokbal.jpg" class="intro-image" alt="豬腳小姐 미쓰족발">
       <div class="attraction-intro">
-        <p class="intro-desc">首爾弘大商圈的排隊美食，以皮Q肉嫩、膠質濃郁聞名，將傳統豬腳滷至入味，肥而不膩、入口即化。</p>
+        <p class="intro-desc"><strong>豬腳小姐（미쓰족발）</strong>是首爾弘大商圈的人氣豬腳名店，以滷製入味、皮Q肉嫩的韓式豬腳聞名。透過長時間燉煮讓膠質充分釋放，整體口感柔嫩卻不油膩，因此成為許多人到弘大必吃的經典韓式美食之一。</p>
         <div class="intro-section">
           <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 推薦必點</h4>
-          <p>✔ <strong>蒜味豬腳 (마늘족발)</strong>：店內人氣第一！鋪滿厚厚一層微甜的蒜泥，解膩又提味。<br><br>✔ <strong>原味五香豬腳 (오리지널족발)</strong>：最經典的吃法，充滿漢方香氣，口感最能吃出皮的Q彈。</p>
+          <p>✔ <strong>蒜味豬腳（마늘족발）</strong>：店內人氣首選。將豬腳鋪上大量蒜泥醬料，帶有微甜蒜香，能平衡豬腳的油脂感，整體風味更加順口。<br><br>✔ <strong>原味五香豬腳（오리지널족발）</strong>：經典必吃口味。以傳統方式燉滷，保留豬腳本身的香氣與膠質口感，更能感受到外皮Q彈與肉質的層次。</p>
         </div>
       </div>
     `
@@ -1268,10 +1237,10 @@ const attractionIntroductions = {
     content: `
       <img src="images/muguok.jpg" class="intro-image" alt="無垢屋 聖水店 무구옥 성수점">
       <div class="attraction-intro">
-        <p class="intro-desc"><strong>無垢屋 聖水店（무구옥 성수점）</strong>首爾聖水洞極具人氣的北韓平壤式蔘雞湯專賣店，榮獲韓國藍緞帶（Blue Ribbon Survey）美味認證。與傳統將糯米塞入雞肚的砂鍋蔘雞湯不同，無垢屋使用傳統大型鐵鍋，將極致濃稠的雞白湯與鮮嫩雞肉分開盛裝，口感宛如法式濃湯般醇厚無腥味，是目前聖水商圈最火紅的排隊食補名店。</p>
+        <p class="intro-desc"><strong>無垢屋 聖水店（무구옥 성수점）</strong>是首爾聖水洞人氣很高的北韓平壤式蔘雞湯專門店，並獲得韓國藍緞帶美食認證。不同於傳統將糯米填入雞腹燉煮的蔘雞湯，店內以濃郁雞白湯搭配分開呈現的嫩雞料理為特色，整體風味溫潤濃厚卻不厚重，是聖水相當受歡迎的韓式食補料理之一。</p>
         <div class="intro-section">
           <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 推薦必點</h4>
-          <p>✔ <strong>北韓式蔘雞湯定食 (이북식 삼계백반)</strong>：店內雷打不動的招牌！附有白飯、去骨嫩雞肉與一碗濃郁至極的雞白湯。隨餐附上山蔘培養根與蒜泥，建議先喝原味雞湯的甘甜，再加入人蔘和蒜頭，最後將白飯倒入湯中作湯泡飯享用。<br><br>✔ <strong>酸甜魷魚拌雞肉 (오징어 닭무침)</strong>：絕佳的涼拌配菜！酸辣爽口的魷魚與雞肉絲非常開胃，能完美中和雞湯濃郁的膠質口感，和蔘雞定食是韓國在地人認證的黃金組合。</p>
+          <p>✔ <strong>北韓式蔘雞湯定食（이북식 삼계백반）</strong>：店內招牌餐點。包含濃郁雞白湯、嫩雞肉與白飯，建議先品嚐原味湯頭，再依喜好加入人蔘與蒜泥，最後搭配白飯一起享用，更能感受到湯底層次與雞肉香氣。<br><br>✔ <strong>酸甜魷魚拌雞肉（오징어 닭무침）</strong>：人氣搭配小菜。以魷魚與雞肉拌入酸甜微辣調味，口感清爽開胃，能平衡雞湯的濃厚感，也是許多人推薦一起搭配的組合。</p>
         </div>
       </div>
     `
@@ -1281,10 +1250,23 @@ const attractionIntroductions = {
     content: `
       <img src="images/standard_bread.jpg" class="intro-image" alt="Standard Bread 聖水店 스탠다드브레드 성수">
       <div class="attraction-intro">
-        <p class="intro-desc"><strong>Standard Bread 聖水店（스탠다드브레드 성수）</strong>是聖水洞超高人氣的歐式鄉村風「現烤生吐司」專賣咖啡廳。店家主打「每 30 分鐘新鮮出爐」的烘焙節奏，門口設有呆萌的巨型大吐司公仔與歐式小橋流水庭院，是洗版韓國社交平台（如 IG、Threads）的知名打卡聖地。</p>
+        <p class="intro-desc"><strong>Standard Bread 聖水店（스탠다드브레드 성수）</strong>是首爾聖水洞高人氣的現烤生吐司咖啡廳，以歐式鄉村風空間與定時出爐的烘焙方式聞名。店內主打柔軟濕潤的生吐司與創意甜點，加上充滿氛圍感的庭院設計與大型吐司裝置，成為聖水相當熱門的打卡咖啡廳之一。</p>
         <div class="intro-section">
           <h4 class="intro-sub-title"><i class="ri-restaurant-line"></i> 推薦必點</h4>
-          <p>✔ <strong>焦糖布蕾法式吐司 (크림브륄레 프렌치 토스트)</strong>：店內雷打不動的 No.1 明星招牌！厚實的布里歐吐司放在鐵盤上現烤，表層是炙燒到酥脆的焦糖脆片，切開後內裡像布丁般濕潤軟嫩、入口即化。<br><br>✔ <strong>經典生吐司系列 (생식빵) 配自選抹醬</strong>：經過 100 天研發的招牌生吐司，口感極度蓬鬆、帶有濃郁奶香。現場提供多達 16 款像冰淇淋一樣色彩繽紛的創意果醬與抹醬供挑選搭配。<br><br>✔ <strong>千層紙巾吐司 (Tissue Bread)</strong>：近期非常火紅的人氣新品，麵包體層次分明，可以用手像抽紙巾一樣一片片撕下來吃，口感帶勁又富有玩味。</p>
+          <p>✔ <strong>焦糖布蕾法式吐司（크림브륄레 프렌치 토스트）</strong>：店內人氣招牌。厚切吐司現烤後覆蓋炙燒焦糖表層，外層帶有酥脆口感，內部柔軟濕潤，整體像甜點般細緻。<br><br>✔ <strong>經典生吐司系列（생식빵）＋自選抹醬</strong>：招牌必吃品項。生吐司口感鬆軟、奶香明顯，可依喜好搭配不同風味抹醬，能感受到麵包本身的細緻風味。<br><br>✔ <strong>千層紙巾吐司（Tissue Bread）</strong>：近期人氣餐點。麵包層次豐富，可一層層撕開享用，兼具口感與趣味性，很適合多人一起分享。</p>
+        </div>
+      </div>
+    `
+  },
+  seoullo_7017: {
+    title: "🌳 首爾路 7017 서울로 7017 空中花園",
+    content: `
+      <img src="images/7017.jpg" class="intro-image" alt="首爾路 7017 서울로 7017 空中花園">
+      <div class="attraction-intro">
+        <p class="intro-desc"><strong>首爾路 7017（서울로 7017）</strong>是將舊有首爾站高架道路改造而成的空中花園步道。名稱中的「70」代表高架橋建成的1970年，「17」則代表重生的2017年。這條長達一公里多的綠色步道種植了豐富多樣的植物，不僅是市民休憩的好去處，更將首爾站周邊被切斷的動線重新連接，是首爾最具代表性的都市更新計畫之一。</p>
+        <div class="intro-section">
+          <h4 class="intro-sub-title"><i class="ri-camera-lens-line"></i> 必看亮點推薦</h4>
+          <p>✔ <strong>空中庭園漫步</strong>：步道兩側種植了數百種植物，四季都有不同的花草景觀，沿途還設有咖啡廳、觀景台與供人休息的長椅，非常適合散步。<br><br>✔ <strong>首爾站夜景（夜間點燈）</strong>：到了夜晚，步道會點亮夢幻的藍色燈光，從這裡俯瞰首爾站、崇禮門與周邊繁華的城市夜景，是攝影愛好者的必拍取景地。<br><br>✔ <strong>周邊景點串聯</strong>：首爾路 7017 連接著南大門市場、明洞、南山等多個重要景點，讓旅客可以輕鬆步行穿梭於首爾的歷史與現代區域之間。</p>
         </div>
       </div>
     `
